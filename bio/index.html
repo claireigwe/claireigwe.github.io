@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <title>Bio</title>
+        <style>
+            
+            @import url('https://fonts.googleapis.com/css?family=Space+Grotesk&display=swap');
+            
+
+            body{
+                box-sizing: border-box;
+                width: 90%;
+                padding: 0%;
+                margin: 0% 0% 0% 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fcfcfc; 
+            }
+            
+            header{
+                box-sizing: border-box;
+                width: 90vw;
+                height: 100vh;
+                margin: 0%;
+                padding: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav{
+                box-sizing:border-box;
+                height: 10%;
+                width: 100vw;
+                position: fixed;
+                left: 0px;
+                margin: 0%;
+                padding: 0% 10% 0% 9.5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                z-index: 4;
+                box-shadow: 1px 1px #fbfbfb;
+            }
+
+            #logo{
+                box-sizing: border-box;
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                text-align: center;
+                z-index: 50;
+            }
+
+            #logo:hover{
+                color: #444444;
+                cursor: pointer;
+            }
+
+            #logo a{
+                text-decoration: none;
+                color: #222222;
+            }
+
+            #link_item{
+                box-sizing: border-box;
+                width: auto;
+                height: 40px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                display: flex;
+                gap: 32px;
+                justify-content: flex-start;
+                text-align: center;
+                align-items: center;   
+                padding: 0%;
+                margin: 0%;
+            }
+            
+            #social_item{
+                box-sizing: border-box;
+                width: auto;
+                height: auto;
+                display: flex;
+                gap: 32px;
+                align-items:center;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            #hamburger{
+                display: none;
+                align-self: center;
+            }
+
+            #dropdown_items{
+                display: none;
+            }
+           
+            .social_links{
+                display:flex;
+                padding: 0%;
+                margin: 0%;
+                transition: transform 0.3s;
+                text-align: center;
+                align-items:center;
+            }
+
+            .nav_links{
+                padding-bottom: 8px;
+                padding-top: 8px;
+                text-decoration: none;
+                color: #222222;
+
+            }
+            
+            .social_links:hover{
+                transform: scale(1.2);
+            }
+
+            .nav_links:hover{
+                border-bottom: 1px solid #444444;
+                color: #444444;
+                cursor: pointer;
+            }
+
+            #hero{
+                box-sizing: border-box;
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0%;
+                margin: 0%;
+            }
+                
+            #hero_text{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 0%;
+                gap: 5%;
+                padding: 10% 0% 0% 0%;
+            }
+            
+            h1{              
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 56px;
+                font-weight: 500;
+                color: #222222;
+                padding: 0% 7.5% 2.5% 7.5%;
+                margin: 0%;
+            }                   
+
+            h2{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:48px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0% 0% 2% 0%;
+                margin: 0%;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                text-align: center;
+            }
+            
+            h4{
+                box-sizing:border-box;
+                max-width: 720px;
+                font-family: 'Space Grotesk','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+                color: #222222;
+                padding: 0%;
+                margin-bottom: 2.5%;
+            }
+
+            h5{
+                box-sizing:border-box;
+                max-width: 720px;
+                font-family: 'Space Grotesk','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0%;
+                margin: 0%;
+                line-height: 1.8;
+            }
+
+            .label_text{
+                color: #999999;
+                font-size: medium;
+                margin-bottom: 2.5%;
+            }
+
+            .paragraph_limits2{
+                padding: 0% 25%;
+                text-align: center;
+            }
+
+            #text_button{
+                box-sizing: border-box;
+                width: fit-content;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: #222222;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            #text_button:hover{
+                color: #444444;
+            }
+
+            #content{
+                box-sizing: border-box;
+                width: 80vw;
+                height: fit-content;
+                display: flex;
+            }
+
+            #main_content{
+                box-sizing: border-box;
+                width: 60vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .main_content1{
+                box-sizing: border-box;
+                width: 45vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                margin-bottom: 7.5%;
+            }
+
+            .main_content2{
+                box-sizing: border-box;
+                width: 45vw;
+                aspect-ratio: 1.2;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                margin-bottom: 7.5%;
+                background-image: url(https://via.placeholder.com/600.png/222222);
+                background-repeat: no-repeat;
+            }
+
+            .main_content3{
+                box-sizing: border-box;
+                width: 45vw;
+                height: fit-content;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: left;
+                margin-bottom: 7.5%;
+            }
+
+            .main_content3_card{
+                box-sizing: border-box;
+                width: 20vw;
+                height: 30vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                margin: 2.5%;
+                padding: 0%;
+                gap: 5%;
+                background-color: #999999;
+            }
+
+            .main_content3_card img{
+                box-sizing: border-box;
+                width: 48px;
+                aspect-ratio: 1;
+                align-items: left;
+                margin: 0%;
+            }
+
+            #hero_margin{
+                box-sizing: border-box;
+                height: 2.5%;
+                margin-bottom: 5%;
+            }
+
+            #side_content{
+                box-sizing: border-box;
+                width: 30vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: left;
+                flex-wrap: wrap;
+                padding: 0% 2.5%;
+            }
+
+            .side_content_card{
+                box-sizing:border-box;
+                display: flex;
+                width: 30vw;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                margin: 2.5% 0%;
+            }
+
+            .side_content_image{
+                box-sizing:border-box;
+                width: 25vw;
+                height: fit-content;
+                align-items: left;
+            }
+
+            footer{
+                background-color: #222222;
+                width: 98vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5% 0% 5% 0%;
+                align-items: center;
+                margin-top: 10%;
+                border-right: #222222 solid 10px;
+                text-align: center;
+            }
+            
+            footer h2{
+                color: white;
+            }
+
+            footer p{
+                color: white;
+            }
+
+            #footer_social_item{
+                box-sizing: border-box;
+                width: auto;
+                height: auto;
+                display: flex;
+                gap: 32px;
+                align-items:center;
+                margin-top: 5%;
+            }
+
+            @media screen and (max-width:1200px) and (min-width:900px){
+
+                #hamburger{
+                    display: none;
+                }
+                
+                #dropdown_items{
+                    display: none;
+                }
+            }
+
+            
+
+            @media screen and (max-width:900px)
+            {
+                body{
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0%;
+                margin: 0%;
+                background-color: #fcfcfc;
+                }
+
+                header{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0% 0% 20% 0%;
+                padding: 0%;
+                }
+            
+                #hero{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                padding: 0%;
+                margin: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+                
+                #hero_text{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: center;
+                margin: 20% 2.5% 0% 2.5%;
+                padding: 5% 0% 5% 0%;
+                }
+
+                #hero_text p{
+                padding: 0% 10% 5% 10%;
+                }
+
+                nav{
+                width: 100%;
+                padding: 0% 7.5%;
+                box-shadow: 1px 1px #f5f5f5;
+                background-color: #fbfbfb;
+                }
+                
+                h1{
+                padding: 0% 5% 7.5% 5%;
+                }
+
+                #social_item, #link_item{
+                display: none;
+                }
+            
+                #hamburger{
+                display: flex;
+                align-self: center;
+               }
+
+
+               #dropdown_items{
+                box-sizing: border-box;
+                width: 300px;
+                height: 100vh;
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 3.5% 7.5% 0% 2.5%;
+                background-color: #eeeeee;
+            }
+
+                #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #222222;
+                }
+
+
+
+                .nav_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    height: 44px;
+                    text-align: left;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    background-color: #eeeeee;
+                    text-decoration: none;
+                }
+
+                .social_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    height: 44px;
+                    text-align: left;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    justify-content: flex-end;
+                    gap: 10%;
+                    text-decoration: none;
+                }
+
+                .nav_links2:hover{
+                    background-color: #999999;
+                }
+
+                .social_links2:hover{
+                    background-color: #999999;
+                }
+
+                #cancel_icon{
+                display: flex;
+                justify-content: flex-end;
+                box-sizing: border-box;
+                text-decoration: none;
+                padding: 5% 0% 5% 0%;
+                }
+
+            #logo_new{
+                display: none;
+            }
+
+            #content{
+                box-sizing: border-box;
+                width: 90vw;
+                height: fit-content;
+                display: flex;
+                padding: 0% 7.5%;
+            }
+
+            .main_content1{
+                box-sizing: border-box;
+                width: 55vw;
+            }
+
+            .main_content2{
+                box-sizing: border-box;
+                width: 55vw;
+            }
+
+            .main_content3{
+                box-sizing: border-box;
+                width: 60vw;
+                gap: 1.25%;
+            }
+
+            .main_content3_card{
+                box-sizing: border-box;
+                width: 25vw;
+                height: 30vh;
+                display: flex;
+                margin-bottom: 7.5%;
+            }
+
+            #side_content{
+                box-sizing: border-box;
+                width: 30vw;
+                height: auto;
+                padding: 0% 10% 0% 0%;
+            }
+
+                .paragraph_limits2{
+                padding: 0% 20%;
+                margin-bottom: 5%;
+                text-align: center;
+                align-self: center;
+                }
+
+
+            
+            .label_text{
+                margin-bottom: 5%;
+            }
+
+            #text_button{
+                box-sizing: border-box;
+                width: fit-content;
+            }
+            
+            .text_button2{
+                box-sizing: border-box;
+                width: fit-content;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #222222;
+                padding: 0%;
+                margin-top: 2.5%;
+            }
+
+            h4{
+                font-family: 'Space Grotesk','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+                color: #222222;
+                padding: 0%;
+                margin-bottom: 2.5%;
+            }
+
+            p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0%;
+                margin: 0%;
+                line-height: 1.8;
+            }
+   
+
+            .mockup:hover{
+                transform: scale(1.02);
+            }
+
+            }
+
+            @media screen and (max-width:660px){
+                
+                #content{
+                flex-wrap: wrap;
+            }
+
+            #main_content{
+                box-sizing: border-box;
+                width: 80vw;
+            }
+            
+            .main_content1{
+                box-sizing: border-box;
+                width: 80vw;
+            }
+
+            .main_content2{
+                box-sizing: border-box;
+                width: 80vw;
+            }
+
+            .main_content3{
+                box-sizing: border-box;
+                width: 80vw;
+                gap: 2.5%;
+            }
+
+            .main_content3_card{
+                box-sizing: border-box;
+                width: 35vw;
+                height: 30vh;
+                display: flex;
+                margin-bottom: 5%;
+            }
+
+            #side_content{
+                box-sizing: border-box;
+                width: 80vw;
+                height: auto;
+                padding: 0%;
+            }
+
+            .side_content_card{
+                box-sizing:border-box;
+                display: flex;
+                width: 60vw;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                margin: 2.5% 0%;
+            }
+
+                h1{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 48px;
+                font-weight: 600;
+                padding: 0% 5% 7.5% 5%;
+                }
+
+            .paragraph_limits2{
+                padding: 0% 10%;
+                text-align: center;
+            }
+
+                h2{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:32px;
+                font-weight: 400;
+                color: #222222;
+            }
+
+            #dropdown_items{
+                box-sizing: border-box;
+                width: 268px;
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 5% 7.5% 0.5% 5%;
+                background-color: #eeeeee;
+            }
+
+                #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #222222;
+                }
+
+
+
+                .nav_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    height: 44px;
+                    text-align: left;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    background-color: #eeeeee;
+                    text-decoration: none;
+                }
+
+                .social_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    height: 44px;
+                    text-align: left;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    justify-content: flex-end;
+                    gap: 10%;
+                    text-decoration: none;
+                }
+
+                .nav_links2:hover{
+                    background-color: #999999;
+                }
+
+                .social_links2:hover{
+                    background-color: #999999;
+                }
+
+                #cancel_icon{
+                display: flex;
+                justify-content: flex-end;
+                box-sizing: border-box;
+                padding: 7.5% 0;
+
+            }
+                #logo_new{
+                box-sizing: border-box;
+                display: none;
+                }
+
+                footer p{
+                padding: 0% 10%;
+            }
+
+            }
+
+            @media screen and (max-width:396px){
+                #dropdown_items{
+                box-sizing: border-box;
+                width: 100%;
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                align-self: center;
+                align-items: right;
+                margin: 0%;
+                background-color: #eeeeee;
+                padding: 2% 7.5% 2.5% 7.5%;
+            }
+
+                #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #222222;
+                }
+
+                .nav_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    text-decoration: none;
+                }
+
+                .social_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                }
+
+                .nav_links2:hover{
+                    background-color: #999999;
+                }
+
+                .social_links2:hover{
+                    background-color: #999999;
+                }
+
+                #cancel_icon{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-self: flex-end;
+                box-sizing: border-box;
+                background-color: #eeeeee;
+                padding: 5% 0%;
+            }
+
+
+                #logo_new{
+                box-sizing: border-box;
+                display: none;
+                }
+
+
+            h1{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 40px;
+                font-weight: 500;
+                padding: 0% 5% 7.5% 5%;
+                }
+
+            
+                
+
+                h2{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:28px;
+                font-weight: 400;
+                color: #222222;
+                }
+
+                .paragraph_limits2{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0% 1.25%;
+                margin-bottom: 5%;
+                text-align: center;
+                align-self: center;
+                }
+
+                #hero_text{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                margin: 35% 2.5% 0% 2.5%;
+                padding: 0%;
+                }
+
+                #text_button{
+                    box-sizing: border-box;
+                    width: fit-content;
+                }
+
+                footer{
+                    margin-top: 5%;
+                }
+            }
+
+        </style>
+            
+        <script>
+            function g(){cancel_icon.parentElement.style.display=""
+            hamburger.style.display=""}
+            
+            function f(){cancel_icon.parentElement.style.display="flex"
+            hamburger.style.display="none"}
+
+        </script>
+
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <section id="logo"><a href="../index.html">Claire Igwe</a></section>
+                
+                <section id="link_item">
+                    <a href="../index.html" class="nav_links">Work</a>
+                   <a href="../bio/index.html" class="nav_links">Bio</a>
+                    <a href="https://www.behance.net/claireigwe2" class="nav_links">Gallery</a>
+                    <a href="https://medium.com/@claireigwe" class="nav_links">Blog</a>
+                </section>
+
+                <section id="social_item">
+                    <a href="mailto:contact@claireigwe.com" class="social_links"><img src="../Images/mail.png" alt="Email Icon"></a>
+                    <a href="https://www.behance.net/claireigwe2" class="social_links"><img src="../Images/behance.png" alt="Behance Icon"></a>
+                    <a href="https://www.linkedin.com/in/claire-igwe" class="social_links"><img src="../Images/linkedin.png" alt="LinkedIn Icon"></a>
+                    <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter.png" alt="Twitter Icon"></a>
+                </section>
+
+                <section id="hamburger" onclick="f()">
+                    <a href="#" class="social_links"><img src="../Images/hamburger.png" alt="Icon"></a>
+                </section>
+                
+                <section id="dropdown_items">
+                    <a href="#" id="cancel_icon" onclick="g()"><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></a>
+                    <p class="label_text">Go To</p>
+                    <a href="../index.html" class="nav_links2"><p>Work</p></a>
+                    <a href="#" class="nav_links2"><p>Bio</p></a>
+                    <a href="https://www.behance.net/claireigwe2" class="nav_links2"><p>Gallery</p></a>
+                    <a href="https://medium.com/@claireigwe" class="nav_links">Blog</a>
+                    <hr><hr>
+                    <p class="label_text">Reach Out</p>
+                    <a href="mailto:contact@claireigwe.com" class="social_links2"><p>Email</p><img src="../Images/mail.png" alt="Email Icon"></a>
+                    <a href="https://www.behance.net/claireigwe2" class="social_links2"><p>Behance</p><img src="../Images/behance.png" alt="Behance Icon"></a>
+                    <a href="https://www.linkedin.com/in/claire-igwe" class="social_links2"><p>LinkedIn</p><img src="../Images/linkedin.png" alt="LinkedIn Icon"></a>
+                    <a href="https://www.twitter.com/claire_uxdesign" class="social_links2"><p>Twitter</p><img src="../Images/twitter.png" alt="Twitter Icon"></a>
+                </section>
+            
+         </nav>
+        
+            <section id="hero">
+                <section id="hero_text">
+                    <h1>From writing short stories to designing scalable prototypes for digital products users love</h1>
+                    <p class="paragraph_limits2">It all starts and ends with a burning desire to build a happier world for everyday people...</p>
+                   <a id="text_button" href="#hero_margin">Here is my Little Story 👇</a>
+                </section>
+            </section>
+        </header>
+        
+        <section id="hero_margin"></section>
+
+        <section id="content" color>
+            <section id="main_content">
+                <section class="main_content1">
+                    <h4>This is where the heading goes</h4>
+                    <p class="label_text"> User interfaces and experience that make digital products beautiful</p>
+                    <p>the user interfaces and experience that make digital products beautiful, delightful to use, and truly easy to autiful, delightful to use, and truly easy the user interfaces and experience thatutiful, delightful to use, and truly easy to autiful, delightful t<br><br>make digital products beautiful, delightful to use, and truly easy to autiful, delightful to use, and truly easy the user interfaces and experience that make digital products beautiful, delightful to use</p>
+                </section>
+
+                <section class="main_content1">
+                    <h4>This is where the heading goes</h4>
+                    <p class="label_text"> User interfaces and experience that make digital products beautiful</p>
+                    <p>the user interfaces and experience that make digital products beautiful, delightful to use, and truly easy to autiful, delightful to use, and truly easy the user interfaces and experience thatutiful, delightful to use, and truly easy to autiful, delightful t<br><br>make digital products beautiful, delightful to use, and truly easy to autiful, delightful to use, and truly easy the user interfaces and experience that make digital products beautiful, delightful to use</p>
+                </section>
+
+                <section class="main_content2">
+
+                </section>
+
+                <section class="main_content3">
+                    <section class="main_content3_card">
+                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
+                        <h5>Grow here and</h5>
+                        <p>and experience that make digital products beautif</p>
+                    </section>
+
+                    <section class="main_content3_card">
+                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
+                        <h5>Grow here and</h5>
+                        <p>and experience that make digital products beautifu</p>
+                    </section>
+
+                    <section class="main_content3_card">
+                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
+                        <h5>Grow here and</h5>
+                        <p>and experience that make digital products beautifu</p>
+                    </section>
+
+                    <section class="main_content3_card">
+                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
+                        <h5>Grow here and</h5>
+                        <p>and experience that make digital products beautiful</p>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <section id="side_content">
+                
+                <section class="side_content_card">
+                    <img class="side_content_image" src="https://placehold.jp/300x500.png">
+                    <p class="label_text"> User interfaces and experie</p>
+                </section>
+
+                <section class="side_content_card">
+                    <h4>heading Here</h4>
+                    <p class="label_text"> User interfaces and experie</p>
+                    <p>and experience that make digital products beautihhdf ful</p>
+                </section>
+
+
+                <section class="side_content_card">
+                    <h4>heading Here</h4>
+                    <p class="label_text"> User interfaces and experie</p>
+                    <p class="side_content_list">Tnd experience<br>That make digi<br>Tal products bea<br>Uti jhfdbhdf</p>
+                </section>
+
+                <section class="side_content_card">
+                    <img class="side_content_image" src="https://placehold.jp/300x500.png">
+                    <p class="label_text"> User interfaces and experie</p>
+                </section>
+
+            </section>
+
+        </section>
+        
+        <footer>
+            <h2>Let's Work Together</h2>
+            <p>I can't wait to share your vision of a digital product</p>
+            <section id="footer_social_item">
+                        <a href="mailto:contact@claireigwe.com" class="social_links"><img src="../Images/mail-white.png" alt="Email Icon"></a>
+                        <a href="https://www.behance.net/claireigwe2" class="social_links"><img src="../Images/behance-white.png" alt="Behance Icon"></a>
+                        <a href="https://www.linkedin.com/in/claire-igwe" class="social_links"><img src="../Images/linkedin-white.png" alt="LinkedIn Icon"></a>
+                        <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter-white.png" alt="Twitter Icon"></a>
+            </section>
+        </footer>
+    
+    </body>
+</html>
