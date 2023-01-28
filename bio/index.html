@@ -265,14 +265,16 @@
             .main_content2{
                 box-sizing: border-box;
                 width: 45vw;
-                aspect-ratio: 1.2;
+                aspect-ratio: 1;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items: left;
+                align-items: center;
                 margin-bottom: 7.5%;
-                background-image: url(https://via.placeholder.com/600.png/222222);
+                background-image: url(../Images/600x600.png);
                 background-repeat: no-repeat;
+                object-fit: contain;
+                object-position: center;
             }
 
             .main_content3{
@@ -289,15 +291,15 @@
             .main_content3_card{
                 box-sizing: border-box;
                 width: 20vw;
-                height: 30vh;
+                min-height: 25vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: left;
                 margin: 2.5%;
-                padding: 0%;
-                gap: 5%;
-                background-color: #999999;
+                padding: 5%;
+                gap: 1.25%;
+                background-color: #dddddd;
             }
 
             .main_content3_card img{
@@ -482,8 +484,6 @@
                 color: #222222;
                 }
 
-
-
                 .nav_links2{
                     box-sizing: border-box;
                     display: flex;
@@ -547,6 +547,8 @@
             .main_content2{
                 box-sizing: border-box;
                 width: 55vw;
+                object-fit: contain;
+                object-position: center;
             }
 
             .main_content3{
@@ -561,6 +563,7 @@
                 height: 30vh;
                 display: flex;
                 margin-bottom: 7.5%;
+                padding: 1.25%
             }
 
             #side_content{
@@ -644,6 +647,8 @@
             .main_content2{
                 box-sizing: border-box;
                 width: 80vw;
+                object-fit: contain;
+                object-position: center;
             }
 
             .main_content3{
@@ -654,10 +659,13 @@
 
             .main_content3_card{
                 box-sizing: border-box;
-                width: 35vw;
-                height: 30vh;
+                width: 80vw;
+                height: 5vh;
                 display: flex;
+                justify-content: space-between;
+                gap: 0.675%;
                 margin-bottom: 5%;
+                padding: 5%;
             }
 
             #side_content{
@@ -675,6 +683,13 @@
                 justify-content: space-between;
                 align-items: left;
                 margin: 2.5% 0%;
+            }
+
+            .side_content_image{
+                box-sizing:border-box;
+                width: 80vw;
+                height: fit-content;
+                align-items: left;
             }
 
                 h1{
@@ -914,7 +929,7 @@
                     <a href="#" id="cancel_icon" onclick="g()"><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></a>
                     <p class="label_text">Go To</p>
                     <a href="https://claireigwe.github.io/portfolio" class="nav_links2"><p>Work</p></a>
-                    <a href="#" class="nav_links2"><p>Bio</p></a>
+                    <!--<a href="#" class="nav_links2"><p>Bio</p></a>-->
                     <a href="https://www.behance.net/claireigwe2" class="nav_links2"><p>Gallery</p></a>
                     <a href="https://medium.com/@claireigwe" class="nav_links">Blog</a>
                     <hr><hr>
@@ -924,8 +939,7 @@
                     <a href="https://www.linkedin.com/in/claire-igwe" class="social_links2"><p>LinkedIn</p><img src="../Images/linkedin.png" alt="LinkedIn Icon"></a>
                     <a href="https://www.twitter.com/claire_uxdesign" class="social_links2"><p>Twitter</p><img src="../Images/twitter.png" alt="Twitter Icon"></a>
                 </section>
-            
-         </nav>
+            </nav>
         
             <section id="hero">
                 <section id="hero_text">
@@ -943,44 +957,64 @@
                 <section class="main_content1">
                     <h4>Hi! Claire here! I'm a Digital Product Designer</h4>
                     <p class="label_text"> But, what does this mean?</p>
-                    <p>My friends think that my job is creating beautiful prototypes on Figma. They think I can't stop obsessing over auto-layouts, critiquing products, and pushing for better design hand-off. My clients think trust me to find a reproducible way to build the backbone for digiatl products that drive successful businesses and their most delighted customers. <strong>I know they are both correct</strong></p>
+                    <p>My friends think that my job is creating beautiful prototypes on Figma. They think I can't stop obsessing over auto-layouts, critiquing products, and pushing for better design hand-off. My clients think trust me to find a reproducible way to build the backbone for digiatl products that drive successful businesses and their most delighted customers. <br><br><strong>I know they are both correct...</strong></p>
                 </section>
 
                 <section class="main_content1">
-                    <h4>This is where the heading goes</h4>
-                    <p class="label_text"> User interfaces and experience that make digital products beautiful</p>
-                    <p>the user interfaces and experience that make digital products beautiful, delightful to use, and truly easy to autiful, delightful to use, and truly easy the user interfaces and experience thatutiful, delightful to use, and truly easy to autiful, delightful t<br><br>make digital products beautiful, delightful to use, and truly easy to autiful, delightful to use, and truly easy the user interfaces and experience that make digital products beautiful, delightful to use</p>
+                    <h4>Went from Kid Stories to User Experience Design...</h4>
+                    <p class="label_text"> How it all began...</p>
+                    <p>When I fell madly in love with digital product design, I was proactively exploring opportunities to build value for businesses while creating a happier world for people. More than two years ago, I managed a blog that chronicled the struggles of women in my local community. I wrote short stories for kids and brands on freelance gigs, and got my hands dirty with everything from digital marketing to front-end development.<br><br><strong>Every step in this journey was a colorful opportunity to learn something new about people, products, and passion...</strong>My colorful background ensures that I care deeply about diverse aspects of the product design and development process, whether it is advocating for better UX copies and design hand-offs.</p>
                 </section>
 
                 <section class="main_content2">
 
                 </section>
 
-                <section class="main_content3">
-                    <section class="main_content3_card">
-                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
-                        <h5>Grow here and</h5>
-                        <p>and experience that make digital products beautif</p>
-                    </section>
+                 <section class="main_content1">
+                    <h4>Working as a Product Designer has been exciting...</h4>
+                    <p class="label_text"> See some of the work I've done...</p>
+                    <p>After more than two years designing designing products, my biggest superpower has become helping businesses build beautiful UI prototypes that form the backbone for digital products users love. My clients trust my mastery of design tools like Figma. It has been a thrill to bring their products from concept to development using best-practices in responsive design with autolayouts, managing UI libraries on complex projects, and documentation.<br><br>In the past year, I've worked as a product designer on diverse teams building everything from a digital registry for vetted eco-friendly consumer products to a blockchain-powered real estate SaaS.<br><br> It has also been a privilege to serve alongside my mentors as a product design (UI/UX) coach to empower hundreds of women starting out as product designers with the knowledge and support they need to excel. <br><br><strong>This is a joyful full circle journey back to a community that kickstarted my product design story</strong>. Product design has given me a platform to help women build the skills they need to create a happier world</p>
+                </section>
 
-                    <section class="main_content3_card">
-                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
-                        <h5>Grow here and</h5>
-                        <p>and experience that make digital products beautifu</p>
-                    </section>
+                <h4>Hi! Claire here! I'm a Digital Product Designer</h4>
+                <p class="label_text"> But, what does this mean?</p>
+               <section class="main_content3">
+                   <section class="main_content3_card">
+                       <img src="../Images/science.png" alt="image for this section">
+                       <h5>Grow here and</h5>
+                       <p>and experience that make digital products beautif</p>
+                   </section>
 
-                    <section class="main_content3_card">
-                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
-                        <h5>Grow here and</h5>
-                        <p>and experience that make digital products beautifu</p>
-                    </section>
+                   <section class="main_content3_card">
+                       <img src="../Images/science.png" alt="image for this section">
+                       <h5>Grow here and</h5>
+                       <p>and experience that make digital products beautifu</p>
+                   </section>
 
-                    <section class="main_content3_card">
-                        <img src="https://via.placeholder.com/48.png/222222" alt="image for this section">
-                        <h5>Grow here and</h5>
-                        <p>and experience that make digital products beautiful</p>
-                    </section>
+                   <section class="main_content3_card">
+                       <img src="../Images/science.png" alt="image for this section">
+                       <h5>Grow here and</h5>
+                       <p>and experience that make digital products beautifu</p>
+                   </section>
 
+                   <section class="main_content3_card">
+                       <img src="../Images/religion.png" alt="image for this section">
+                       <h5>Grow here and</h5>
+                       <p>and experience that make digital products beautiful</p>
+                   </section>
+
+               </section>
+
+                <section class="main_content1">
+                    <h4>My Biggest Passion...</h4>
+                    <p class="label_text"> See some of my biggest goals...</p>
+                    <p>Today, I am pursuing opportunities to work with a more diverse team of tech innovators on products that count. I love collaboration, brainstorming, and all the communicatuin that goes into teamwork. <br><br> Informed by a long history with underserved users and humanitarian issues. I also have developed a deep interests in aspects of user experience design like accessibiliy and global isses like sustainability.<br><br>I'm constantly pursuing opportunities to work on a team where my talents would significantly make products more enjoyable to users and profitalble to businesses. <strong>Is your business my dream come true? Let's talk!</strong></p>
+                </section>
+
+                <section class="main_content1">
+                    <h4>Fun Facts about Me...</h4>
+                    <p class="label_text">This is Classified!</p>
+                    <p>First, one of my proudest moments was finishing the HerTechTrail bootcamp as the best graduating student for its 2020 cohort. I found a burning passion and met so many beautiful people at the close of a pandemic, online of course, while learning the rocket-science behind product design.<br><br>Second, there is a long consonance in my name with a story. <strong>Chisom Claire Cleopatra Igwe </strong> - My parents picked the first two names and my surname, of course. I picked the name Cleopatra as a teenager looking for another cool name that just started with a "C." I guess I love a good consonance.<br><br>Third, when I'm not designing something beautiful on Figma, you would find me pouring over fiction. I love literature, romance in particular.</p>
                 </section>
 
             </section>
@@ -988,25 +1022,19 @@
             <section id="side_content">
                 
                 <section class="side_content_card">
-                    <img class="side_content_image" src="https://placehold.jp/300x500.png">
+                    <img class="side_content_image" src="../Images/300x500.png">
                     <p class="label_text"> User interfaces and experie</p>
                 </section>
 
                 <section class="side_content_card">
                     <h4>heading Here</h4>
                     <p class="label_text"> User interfaces and experie</p>
-                    <p>and experience that make digital products beautihhdf ful</p>
-                </section>
-
-
-                <section class="side_content_card">
-                    <h4>heading Here</h4>
-                    <p class="label_text"> User interfaces and experie</p>
+                    <p>Fnd experience that make digital products beautihhdf ful</p>
                     <p class="side_content_list">Tnd experience<br>That make digi<br>Tal products bea<br>Uti jhfdbhdf</p>
                 </section>
 
                 <section class="side_content_card">
-                    <img class="side_content_image" src="https://placehold.jp/300x500.png">
+                    <img class="side_content_image" src="../Images/300x500.png">
                     <p class="label_text"> User interfaces and experie</p>
                 </section>
 
