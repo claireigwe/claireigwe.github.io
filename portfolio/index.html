@@ -6,7 +6,7 @@
         <title>Claire Igwe</title>
         <style>
             
-            @import url('https://fonts.googleapis.com/css?family=Space+Grotesk&display=swap');
+           /* @import url('https://fonts.googleapis.com/css?family=Space+Grotesk&display=swap');*/
             
 
             body{
@@ -38,7 +38,7 @@
                 position: fixed;
                 left: 0px;
                 margin: 0%;
-                padding: 0% 10% 0% 9.5%;
+                padding: 0% 10%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -88,17 +88,25 @@
                 display: flex;
                 gap: 32px;
                 align-items:center;
+                justify-content: center;
                 padding: 0%;
                 margin: 0%;
             }
 
-            #hamburger{
+            .hamburger{
+                display: none;
+                align-self: center;
+            }
+            .hamburger_none{
                 display: none;
                 align-self: center;
             }
 
-            #dropdown_items{
+            .dropdown_items{
                 display: none;
+            }
+             .dropdown_items_flex{
+                 display:none;
             }
            
             .social_links{
@@ -368,6 +376,7 @@
                 color: #999999;
                 font-size: medium;
                 margin-bottom: 2.5%;
+
             }
 
             .text_button2{
@@ -439,13 +448,16 @@
                     width: 150%;
                 }
 
-                #hamburger{
+                .hamburger{
                     display: none;
                 }
                 
-                #dropdown_items{
+                .dropdown_items{
                     display: none;
                 }
+           
+                
+                
             }
 
             
@@ -517,13 +529,18 @@
                 display: none;
                 }
             
-                #hamburger{
+                .hamburger{
                 display: flex;
                 align-self: center;
                }
 
 
-               #dropdown_items{
+               .hamburger_none{
+                display: none;
+               }
+
+
+               .dropdown_items{
                 box-sizing: border-box;
                 width: 300px;
                 height: 100vh;
@@ -537,7 +554,29 @@
                 background-color: #eeeeee;
             }
 
+      
+             .dropdown_items_flex{
+                 display:flex;
+                box-sizing: border-box;
+                width: 350px;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 3.5% 7.5% 0% 2.5%;
+                background-color: #eeeeee;
+                 }
+
                 #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #222222;
+                }
+
+                #dropdown_items button p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 16px;
                 font-weight: 600;
@@ -645,7 +684,9 @@
             }
             
             .label_text{
+                box-sizing: border-box;
                 margin-bottom: 5%;
+            
             }
 
             #text_button{
@@ -688,6 +729,10 @@
                 transform: scale(1.02);
             }
 
+            button{
+                border: 0px;
+            }
+
             }
 
             @media screen and (max-width:660px){
@@ -728,7 +773,7 @@
                     padding-top: 20%;
                 }
 
-            #dropdown_items{
+            .dropdown_items{
                 box-sizing: border-box;
                 width: 264px;
                 display: none;
@@ -740,6 +785,27 @@
                 padding: 5% 7.5% 0.5% 5%;
                 background-color: #eeeeee;
             }
+
+            .dropdown_items_flex{
+                 display:flex;
+                box-sizing: border-box;
+                width: 250px;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 3.5% 7.5% 0% 2.5%;
+                background-color: #eeeeee;
+                 }
+
+                #dropdown_items button p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #222222;
+                }
 
                 #dropdown_items a p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -762,7 +828,6 @@
                     background-color: #eeeeee;
                     text-decoration: none;
                 }
-
                 .social_links2{
                     box-sizing: border-box;
                     display: flex;
@@ -804,22 +869,41 @@
             }
 
             @media screen and (max-width:396px){
-                #dropdown_items{
+                .dropdown_items{
                 box-sizing: border-box;
-                width: 100%;
+                width: 100vw;
                 display: none;
                 flex-direction: column;
                 position: fixed;
                 top: 0%;
                 left: 0%;
-                align-self: center;
                 align-items: right;
-                margin: 0%;
+                padding: 5% 7.5% 0.5% 5%;
                 background-color: #eeeeee;
-                padding: 2% 7.5% 2.5% 7.5%;
             }
 
+            .dropdown_items_flex{
+                display:flex;
+                box-sizing: border-box;
+                width: 100vw;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                align-items: right;
+                padding: 1.5% 7.5% 0% 7.5%;
+                background-color: #eeeeee;
+                 }
+
                 #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #222222;
+                }
+
+                #dropdown_items button p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 16px;
                 font-weight: 500;
@@ -937,25 +1021,18 @@
 
         </style>
             
-        <script>
-            function g(){cancel_icon.parentElement.style.display=""
-            hamburger.style.display=""}
-            
-            function f(){cancel_icon.parentElement.style.display="flex"
-            hamburger.style.display="none"}
 
-        </script>
 
 
     </head>
     <body>
         <header>
-            <nav>
-                    <section id="logo"><a href="#">Claire Igwe</a></section>
+                <nav>
+                    <section id="logo"><a>Claire Igwe</a></section>
                     
                     <section id="link_item">
-                        <a href="#" class="nav_links">Work</a>
-                        <!--<a href="https://claireigwe.github.io/bio" class="nav_links">Bio</a>-->
+                        <a class="nav_links">Work</a>
+                        <a href="https://claireigwe.github.io/bio" class="nav_links">Bio</a>
                         <a href="https://www.behance.net/claireigwe2" class="nav_links">Gallery</a>
                         <a href="https://medium.com/@claireigwe" class="nav_links">Blog</a>
                     </section>
@@ -967,15 +1044,15 @@
                         <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter.png" alt="Twitter Icon"></a>
                     </section>
 
-                    <section id="hamburger" onclick="f()">
-                        <a href="#" class="social_links"><img src="../Images/hamburger.png" alt="Icon"></a>
+                    <section id="hamburger" class="hamburger">
+                        <button><img src="../Images/hamburger.png"  alt="Icon"></button>
                     </section>
                     
-                    <section id="dropdown_items">
-                        <a href="#" id="cancel_icon" onclick="g()"><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></a>
+                    <section id="dropdown_items" class="dropdown_items">
+                        <button href="#" id="cancel_icon"><!--<p id="logo_new">Claire &star; Igwe</p>--><img src="../Images/close_icon.png" alt="Icon"></button>
                         <p class="label_text">Go To</p>
-                        <a href="#" class="nav_links2"><p>Work</p></a>
-                        <!--<a href="https://claireigwe.github.io/bio" class="nav_links">Bio</a>-->
+                        <button  class="nav_links2" id="close_on_portfolio"><p>Work</p></button>
+                        <a href="https://claireigwe.github.io/bio" class="nav_links2"><p>Bio</p></a>
                         <a href="https://www.behance.net/claireigwe2" class="nav_links2"><p>Gallery</p></a>
                         <a href="https://medium.com/@claireigwe" class="nav_links">Blog</a>
                         <hr><hr>
@@ -985,8 +1062,7 @@
                         <a href="https://www.linkedin.com/in/claire-igwe" class="social_links2"><p>LinkedIn</p><img src="../Images/linkedin.png" alt="LinkedIn Icon"></a>
                         <a href="https://www.twitter.com/claire_uxdesign" class="social_links2"><p>Twitter</p><img src="../Images/twitter.png" alt="Twitter Icon"></a>
                     </section>
-                
-            </nav>
+                </nav>
         
             <section id="hero">
                 <section id="hero_text">
@@ -1009,7 +1085,7 @@
 
                 <section class="project_card">
                     <h4>Inspiring Cloth Donors to Spread Love and Give More</h4>
-                    <p class="label_text">UI/UX Design Intern, Ingressive4Good</p>
+                    <p class="label_text">UI/UX Design Intern, Ingressive4Good
                     <p class="paragraph_limits3">Develop high-level competence in the design thinking process, UX research, and advanced UI prototyping with Figma, Adobe XD, and other modern design tools</p> 
                     <a class="text_button2" href="https://claireigwe.github.io/clothes-xo">View Case Study</a>                                                            
                 </section>
@@ -1020,7 +1096,7 @@
                 
                 <section class="project_card">
                     <h4>Optimizing Compliance Management and Corporate Deadline Reminders</h4>
-                    <p class="label_text">Product Designer (Freelance), Kipati</p>
+                    <p class="label_text">Product Designer (Freelance), Kipati
                     <p class="paragraph_limits3">Fleshed out product concept with the product founder, defined features, and handed off high-fidelity wireframes and prototypes after UX research</p>
                     <a class="text_button2" href="https://claireigwe.github.io/kipati">View Case Study</a>                                       
                 </section>                          
@@ -1031,7 +1107,7 @@
                 
                 <section class="project_card">
                     <h4>Designing a Fully Immersive Virtual Experience for Fashion Shoppers</h4>
-                    <p class="label_text">Product Design Intern, Dev and Design</p>
+                    <p class="label_text">Product Design Intern, Dev and Design
                     <p class="paragraph_limits3">Mastered responsive design using the Figma autolayout feature. Collaborated with other interns and a senior UI/UX designer and handed off high-fidelity prototypes</p> 
                     <a class="text_button2" href="https://claireigwe.github.io/immers">View Case Study</a>                                       
                 </section>                          
@@ -1042,7 +1118,7 @@
 
                 <section class="project_card">
                     <h4>Connecting Friends in Commute on a Close-Knit Social Media App</h4>
-                    <p class="label_text">UI/UX Designer (Freelance), Connect Now</p>
+                    <p class="label_text">UI/UX Designer (Freelance), Connect Now
                     <p class="paragraph_limits3">Developed product concept, defined features, and handed off high-fidelity prototypes after UX research and meetings with the product founder, all within a week</p> 
                     <a class="text_button2" href="#connectnow">Coming Soon</a>                                       
                 </section>                          
@@ -1058,7 +1134,7 @@
                     <a class="text_button2" href="#houseafrica">Coming Soon!!!</a>                                       
             </section>
                                      
-        </section>
+            </section>
             
         </section>
         
@@ -1072,6 +1148,36 @@
                         <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter-white.png" alt="Twitter Icon"></a>
             </section>
         </footer>
-    
+          <script >
+            
+        hamburger.onclick=()=>{
+            hamburger.className='hamburger_none';      
+           document.getElementById('dropdown_items').className="dropdown_items_flex"
+        }
+    document.querySelectorAll("#dropdown_items *,nav *,header,nav").forEach(element=>{
+               element.classList.add('do_not_close_on_focus')
+    });
+      document.querySelectorAll("body *").forEach(element=>{
+          if(element.className.includes('do_not_close_on_focus')==false&&element.className.includes('hamburger')==false&&element.className.includes('navparent')==false){
+               element.classList.add('go_close_on_focus')
+           }
+    });
+         document.querySelectorAll(".go_close_on_focus").forEach(element=>{
+               element.onclick=(e)=>{
+                   if(e.srcElement.className.includes('do_not_close_on_focus')==false){
+                  dropdown_items.className='dropdown_items';
+                  hamburger.className='hamburger';
+             }
+             }
+    });
+        cancel_icon.onclick=()=>{
+            dropdown_items.className='dropdown_items';
+            hamburger.className='hamburger';
+        }
+           close_on_portfolio.onclick=()=>{
+            dropdown_items.className='dropdown_items';
+            hamburger.className='hamburger';
+        }
+    </script>
     </body>
 </html>

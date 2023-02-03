@@ -93,13 +93,21 @@
                 align-items:center;
             }
 
-            #hamburger{
+            .hamburger{
+                display: none;
+                align-self: center;
+                outline:0px solid;
+                border:0px solid;
+            }
+            .hamburger_none{
                 display: none;
                 align-self: center;
             }
-
-            #dropdown_items{
+            .dropdown_items{
                 display: none;
+            }
+            .dropdown_items_flex{
+                 display:none;
             }
 
             hr{
@@ -534,12 +542,11 @@
                     width: 150%;
                 }
 
-
-                #hamburger{
+             .hamburger{
                     display: none;
                 }
                 
-                #dropdown_items{
+                .dropdown_items{
                     display: none;
                 }
             }
@@ -613,25 +620,45 @@
                 display: none;
                 }
             
-                #hamburger{
+          .hamburger{
                 display: flex;
                 align-self: center;
                }
 
 
-               #dropdown_items{
+               .hamburger_none{
+                display: none;
+               }
+
+
+               .dropdown_items{
                 box-sizing: border-box;
-                width: 200px;
+                width: 300px;
                 height: 100vh;
                 display: none;
                 flex-direction: column;
                 position: fixed;
                 top: 0%;
-                right: 5%;
+                right: 0%;
                 align-items: right;
-                padding: 2% 2.5% 0.5% 3%;
+                padding: 3.5% 7.5% 0% 2.5%;
                 background-color: #eeeeee;
             }
+
+      
+             .dropdown_items_flex{
+                 display:flex;
+                box-sizing: border-box;
+                width: 300px;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 3.5% 7.5% 0% 2.5%;
+                background-color: #eeeeee;
+                 }
 
                 #dropdown_items a p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -681,6 +708,8 @@
                 box-sizing: border-box;
                 text-decoration: none;
                 padding: 5% 0% 5% 0%;
+                outline:0px solid;
+                border:0px solid;
                 }
 
                 #logo_new{
@@ -922,7 +951,7 @@
                 padding: 10%;
             }
 
-            #dropdown_items{
+            .dropdown_items{
                 box-sizing: border-box;
                 width: 160px;
                 display: none;
@@ -934,6 +963,20 @@
                 padding: 3% 2.5% 0.5% 5%;
                 background-color: #eeeeee;
             }
+
+            .dropdown_items_flex{
+                 display:flex;
+                box-sizing: border-box;
+                width: 250px;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 3.5% 7.5% 0% 2.5%;
+                background-color: #eeeeee;
+                 }
 
                 #dropdown_items a p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -998,7 +1041,7 @@
             }
 
             @media screen and (max-width:396px){
-                #dropdown_items{
+                .dropdown_items{
                 box-sizing: border-box;
                 width: 100%;
                 display: none;
@@ -1012,6 +1055,20 @@
                 background-color: #eeeeee;
                 padding: 5% 7.5% 5% 7.5%;
             }
+
+            .dropdown_items_flex{
+                display:flex;
+                box-sizing: border-box;
+                width: 100vw;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 3.5% 7.5% 0% 2.5%;
+                background-color: #eeeeee;
+                 }
 
                 #dropdown_items a p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1162,15 +1219,6 @@
             }
 
         </style>
-            
-        <script>
-            function g(){cancel_icon.parentElement.style.display=""
-            hamburger.style.display=""}
-            
-            function f(){cancel_icon.parentElement.style.display="flex"
-            hamburger.style.display="none"}
-
-        </script>
 
 
     </head>
@@ -1193,12 +1241,12 @@
                         <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter.png" alt="Twitter Icon"></a>
                     </section>
 
-                    <section id="hamburger" onclick="f()">
-                        <a href="#" class="social_links"><img src="../Images/hamburger.png" alt="Icon"></a>
+                    <section id="hamburger" class="hamburger">
+                        <button href="#" class="social_links"><img src="../Images/hamburger.png" alt="Icon"></button>
                     </section>
                     
-                    <section id="dropdown_items">
-                        <a href="https://samuelakigbogun.github.io/portfolio-landing-page" id="cancel_icon" onclick="g()"><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></a>
+                    <section id="dropdown_items" class="dropdown_items">
+                        <button href="https://samuelakigbogun.github.io/portfolio-landing-page" id="cancel_icon" ><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></button>
                         <p class="label_text">Go To</p>
                         <a href="#" class="nav_links2"><p>Work</p></a>
                         <a href="#" class="nav_links2"><p>Bio</p></a>
@@ -1438,6 +1486,33 @@
                         <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter-white.png" alt="Twitter Icon"></a>
             </section>
         </footer>
-    
+                    <script >
+            
+        hamburger.onclick=()=>{
+            hamburger.className='hamburger_none';      
+           document.getElementById('dropdown_items').className="dropdown_items_flex"
+        }
+    document.querySelectorAll("#dropdown_items *,nav *,nav").forEach(element=>{
+               element.classList.add('do_not_close_on_focus')
+    });
+      document.querySelectorAll("body *").forEach(element=>{
+          if(element.className.includes('do_not_close_on_focus')==false&&element.className.includes('hamburger')==false&&element.className.includes('navparent')==false){
+               element.classList.add('go_close_on_focus')
+           }
+    });
+         document.querySelectorAll(".go_close_on_focus").forEach(element=>{
+               element.onclick=(e)=>{
+                   if(e.srcElement.className.includes('do_not_close_on_focus')==false){
+                  dropdown_items.className='dropdown_items';
+                  hamburger.className='hamburger';
+             }
+             }
+    });
+        cancel_icon.onclick=()=>{
+            dropdown_items.className='dropdown_items';
+            hamburger.className='hamburger';
+        }
+
+    </script>
     </body>
 </html>

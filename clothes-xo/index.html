@@ -96,15 +96,20 @@
                 align-items:center;
             }
 
-            #hamburger{
+            .hamburger{
                 display: none;
                 align-self: center;
             }
-
-            #dropdown_items{
+            .hamburger_none{
+                display: none;
+                align-self: center;
+            }
+            .dropdown_items{
                 display: none;
             }
-
+            .dropdown_items_flex{
+                 display:none;
+            }
             hr{
                 color: none;
             }
@@ -741,14 +746,13 @@
                 }
 
 
-                #hamburger{
+               .hamburger{
                     display: none;
                 }
                 
-                #dropdown_items{
+                .dropdown_items{
                     display: none;
                 }
-
                 .pattern_4_card{
                 box-sizing: border-box;
                 width: 32%;
@@ -869,15 +873,20 @@
                 #social_item, #link_item{
                 display: none;
                 }
-            
-                #hamburger{
+                .hamburger{
                 display: flex;
                 align-self: center;
                }
 
-               #dropdown_items{
+
+               .hamburger_none{
+                display: none;
+               }
+
+
+               .dropdown_items{
                 box-sizing: border-box;
-                width: 350px;
+                width: 300px;
                 height: 100vh;
                 display: none;
                 flex-direction: column;
@@ -885,9 +894,24 @@
                 top: 0%;
                 right: 0%;
                 align-items: right;
-                padding: 4% 14% 0% 2.5%;
+                padding: 3.5% 7.5% 0% 2.5%;
                 background-color: #eeeeee;
             }
+
+      
+             .dropdown_items_flex{
+                 display:flex;
+                box-sizing: border-box;
+                width: 350px;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-items: right;
+                padding: 5% 15% 0% 7.5%;
+                background-color: #eeeeee;
+                 }
 
                 #dropdown_items a p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1253,7 +1277,7 @@
                 padding: 10%;
             }
 
-            #dropdown_items{
+            .dropdown_items{
                 box-sizing: border-box;
                 width: 300px;
                 display: none;
@@ -1265,6 +1289,20 @@
                 padding: 5.5% 13.75% 0.5% 5%;
                 background-color: #eeeeee;
             }
+
+            .dropdown_items_flex{
+                display:flex;
+                box-sizing: border-box;
+                width: 300px;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 7.5%;
+                align-items: right;
+                padding: 2.5% 7.5% 0% 7.5%;
+                background-color: #eeeeee;
+                 }
 
                 #dropdown_items a p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1372,7 +1410,7 @@
             }
 
             @media screen and (max-width:396px){
-                #dropdown_items{
+                .dropdown_items{
                 box-sizing: border-box;
                 width: 102.5vw;
                 height: 115vh;
@@ -1386,6 +1424,20 @@
                 background-color: #eeeeee;
                 padding: 2.5% 5%;
             }
+
+            .dropdown_items_flex{
+                display:flex;
+                box-sizing: border-box;
+                width: 100vw;
+                height: 100vh;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                align-items: right;
+                padding: 2.5% 3.5% 0% 5%;
+                background-color: #eeeeee;
+                 }
 
                 #dropdown_items a p{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1653,15 +1705,6 @@
             }
 
         </style>
-            
-        <script>
-            function g(){cancel_icon.parentElement.style.display=""
-            hamburger.style.display=""}
-            
-            function f(){cancel_icon.parentElement.style.display="flex"
-            hamburger.style.display="none"}
-
-        </script>
 
 
     </head>
@@ -1672,7 +1715,7 @@
                     
                     <section id="link_item">
                         <a href="https://claireigwe.github.io/portfolio" class="nav_links">Work</a>
-                        <!--<a href="https://claireigwe.github.io/bio" class="nav_links">Bio</a>-->
+                        <a href="https://claireigwe.github.io/bio" class="nav_links">Bio</a>
                         <a href="https://www.behance.net/claireigwe2" class="nav_links">Gallery</a>
                         <a href="https://medium.com/@claireigwe" class="nav_links">Blog</a>
                     </section>
@@ -1684,17 +1727,17 @@
                         <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter.png" alt="Twitter Icon"></a>
                     </section>
 
-                    <section id="hamburger" onclick="f()">
+                    <section id="hamburger" class="hamburger">
                         <a href="#" class="social_links"><img src="../Images/hamburger.png" alt="Icon"></a>
                     </section>
                     
-                    <section id="dropdown_items">
-                        <a href="#" id="cancel_icon" onclick="g()"><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></a>
+                    <section id="dropdown_items" class="dropdown_items">
+                        <a href="#" id="cancel_icon"><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></a>
                         <p class="label_text">Go To</p>
                         <a href="https://claireigwe.github.io/portfolio" class="nav_links2"><p>Work</p></a>
-                        <!--<a href="https://claireigwe.github.io/bio" class="nav_links">Bio</a>-->
+                        <a href="https://claireigwe.github.io/bio" class="nav_links2"><p>Bio</p></a>
                         <a href="https://www.behance.net/claireigwe2" class="nav_links2"><p>Gallery</p></a>
-                        <a href="https://medium.com/@claireigwe" class="nav_links">Blog</a>
+                        <a href="https://medium.com/@claireigwe" class="nav_links2"><p>Blog</p></a>
                         <hr><hr>
                         <p class="label_text">Reach Out</p>
                         <a href="mailto:contact@claireigwe.com" class="social_links2"><p>Email</p><img src="../Images/mail.png" alt="Email Icon"></a>
@@ -2163,6 +2206,35 @@
                         <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter-white.png" alt="Twitter Icon"></a>
             </section>
         </footer>
+
+                <script >
+            
+        hamburger.onclick=()=>{
+            hamburger.className='hamburger_none';      
+           document.getElementById('dropdown_items').className="dropdown_items_flex"
+        }
+    document.querySelectorAll("#dropdown_items *,nav *,header,nav").forEach(element=>{
+               element.classList.add('do_not_close_on_focus')
+    });
+      document.querySelectorAll("body *").forEach(element=>{
+          if(element.className.includes('do_not_close_on_focus')==false&&element.className.includes('hamburger')==false&&element.className.includes('navparent')==false){
+               element.classList.add('go_close_on_focus')
+           }
+    });
+         document.querySelectorAll(".go_close_on_focus").forEach(element=>{
+               element.onclick=(e)=>{
+                   if(e.srcElement.className.includes('do_not_close_on_focus')==false){
+                  dropdown_items.className='dropdown_items';
+                  hamburger.className='hamburger';
+             }
+             }
+    });
+        cancel_icon.onclick=()=>{
+            dropdown_items.className='dropdown_items';
+            hamburger.className='hamburger';
+        }
+
+    </script>
     
     </body>
 </html>
