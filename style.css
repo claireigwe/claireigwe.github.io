@@ -1,0 +1,2575 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    color-scheme: dark light;
+}
+
+:root{
+        /*Color Styles*/
+
+        --white: #FCFCFA;
+        --black: #1E1D1C;
+        --grey-light: #EDEDDE;
+        --grey-dark: #5C5C4F;
+        --light-overlay: #5C5C4F55;
+        --dark-overlay: #1E1D1C90;
+        --thin-overlay: #5C5C4F20;
+        --red: #C11212;
+        --blend: difference;
+        --aeGreen: #BAE8D7;
+    
+
+    
+        /*Spacing*/
+
+        --navHeightDesktop: 64px;
+        --navHeightMobile: 56px;
+        --visibleHeightDesktop: calc(100vh - var(--navHeightDesktop)); 
+        --visibleHeightMobile: calc(100vh - var(--navHeightMobile));
+
+        
+        /*Typography*
+    
+    --weight-regular: 400;
+    --weight-medum : meduium;
+    --weight-light: light;
+    
+    --font-size-64: 64px;
+    --font-size-48: 48px;
+    --font-size-40: 40px; 
+    --font-size-32: 32px;
+    --font-size-24: 24px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+    --font-size-12: 12px;
+    
+    --line-height-big: 2;
+    --line-height-small: 1.5;
+    --line-height-mid : calc(28 / 18);
+    
+    --font-family-paragraph: "Public Sans", sans-serif;
+    --font-family-heading: "Space Grotesk", sans-serif;
+    --font-family-logo: "Gemunu Libre", sans-serif;
+    
+    
+    
+    
+    
+    --heading4-desktop: var(--weight-regular) var(--font-size-64)/var(--line-height-small) var(--font-family-heading);
+    --heading3-desktop: var(--weight-regular) var(--font-size-48)/var(--line-height-small) var(--font-family-heading);
+    --heading2-desktop: var(--weight-regular) var(--font-size-32)/var(--line-height-small) var(--font-family-heading);
+    --heading1-desktop: var(--weight-regular) var(--font-size-18)/var(--line-height-small) var(--font-family-heading);
+    
+    --heading4-mobile: var(--weight-medium) var(--font-size-40)/var(--line-height-small) var(--font-family-heading);
+    --heading3-mobile: var(--weight-medium) var(--font-size-32)/var(--line-height-small) var(--font-family-heading);
+    --heading2-mobile: var(--weight-medium) var(--font-size-24)/var(--line-height-small) var(--font-family-heading);
+    --heading1-mobile: var(--weight-medium) var(--font-size-16)/var(--line-height-big) var(--font-family-heading);    
+    
+    --paragraph16-bold: var(--weight-medium) var(--font-size-16)/var(--line-height-big) var(--font-family-paragraph);
+    --paragraph14-bold: var(--weight-medium) var(--font-size-14)/var(--line-height-big) var(--font-family-paragraph);
+    --paragraph12-bold: var(--weight-medium) var(--font-size-12)/var(--line-height-big) var(--font-family-paragraph);
+    
+    
+    --paragraph16-light: var(--weight-light) var(--font-size-16)/var(--line-height-big) var(--font-family-paragraph);
+    --paragraph14-light: var(--weight-light) var(--font-size-14)/var(--line-height-big) var(--font-family-paragraph);
+    --paragraph12-light: var(--weight-light) var(--font-size-12)/var(--line-height-big) var(--font-family-paragraph);
+    
+    --logo-large: var(--weight-medium) var(--font-size-24)/var(--line-height-small) var(--font-family-logo);
+    --logo-small: var(--weight-medium) var(--font-size-18)/var(--line-height-small) var(--font-family-logo);
+
+*/
+
+    /*--heading4-desktop
+
+    font-weight: medium;
+    font-size: 64px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+
+
+    /*--heading3-desktop
+    
+    font-weight: regular;
+    font-size: 48px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+
+
+    /*--heading2-desktop
+
+    font-weight: regular;
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+
+
+    /*
+
+    --heading1-desktop
+
+    font-weight: regular;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+    /*
+    
+    --heading4-mobile
+
+    font-weight: medium;
+    font-size: 40px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+
+    /*
+
+    --heading3-mobile
+
+    font-weight: medium;
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+
+
+    /*
+
+    --heading2-mobile
+
+    font-weight: medium;
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+
+
+    /*
+
+    --heading1-mobile
+    
+    font-weight: medium;
+    font-size: 16px;
+    line-height:2;
+    font-family: "Space Grotesk", sans-serif;
+
+    */
+
+    
+    /*
+    
+    --paragraph16-bold
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+
+    */
+
+
+
+
+    /*
+
+    --paragraph14-bold
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+
+    */
+
+
+
+
+    /*
+
+    --paragraph12-bold
+
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+
+    */
+
+
+    
+    /*
+
+    --paragraph16-light
+    font-weight: light;
+    font-size: 16px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+
+    */
+
+
+
+
+    /*
+    
+    --paragraph14-light
+
+    font-weight: light;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+
+    */
+
+
+
+
+    /*
+
+    --paragraph12-light
+
+    font-weight: light;
+    font-size: 12px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+
+    */
+
+
+
+
+    /*
+    
+    --logo-large
+
+    font-weight: medium;
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Gemunu Libre", sans-serif;
+
+    */
+
+
+
+    /*
+
+    --logo-small
+
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: "Gemunu Libre", sans-serif;
+
+    */
+}
+
+
+body, header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--grey-light);
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+
+body::webkit-scrollbar{
+    width: 16px;
+}
+
+
+header{
+    height: fit-content;
+}
+
+.menuPage a{
+    color: inherit;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: var(--navHeightDesktop);
+    padding: 0 5vw;
+    position: fixed;
+    z-index: 5;
+    backdrop-filter: blur(12px);
+}
+
+
+nav button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+nav button img{
+    content: url(Images/menu.svg);
+    mix-blend-mode: var(--blend);
+
+}
+.nav_img {
+  content: url(Images/menu_white.svg);
+}
+.close_img {
+  content: url(Images/close.svg);
+}
+.white {
+  animation: white_color linear;
+  animation-range: contain;
+  animation-timeline: view(0vh 100vh);
+}
+.white_color{
+    color: white;
+}
+@keyframes white_color {
+  from {
+    zoom: 1.00001;
+  }
+  to {
+    zoom: 1.00001;
+  }
+}
+nav a:first-of-type{ 
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Gemunu Libre", sans-serif;
+    color: inherit;
+
+}
+
+nav button p{
+    color: var(--black);
+    mix-blend-mode: var(--blend);
+}
+
+
+#padding1, #padding2{
+    padding-top: 64px;
+}
+
+#padding2 h4{
+    color: var(--white)
+}
+
+
+
+.close{
+    display: none;
+}
+.open{
+    display: flex;
+}
+.menuPage{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    padding: 128px 5VW 64px 5vw;
+    background-color: var(--black);
+    color: var(--white);
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+
+.menuPage > section:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menuPage > section:last-child{
+    display: flex;;
+    justify-content: space-between;
+    align-items: end;
+    width: 90vw;
+}
+
+.hero1{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 120px 5vw 80px 5vw;
+    height: 140vh;
+    max-height: 900px;
+}
+
+
+.hero1 > section:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 30vw;
+    min-width: 320px;
+    height: 100%;
+}
+
+.hero1 h1{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    overflow-y: hidden;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+
+.dynamicHeading{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 96px;
+    overflow-y: hidden;
+    color: var(--red);
+}
+
+.dynamicHeading > span{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    min-width: 600px;
+    animation-duration: 10s;
+    animation-name: swapHeading;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5);
+}
+    
+    
+    @keyframes swapHeading{
+        from{
+            transform: translateY(0) ;
+        }
+
+        to{
+            transform: translateY(calc(-480px));
+        }
+    }
+
+
+.hero1 > section:first-of-type section:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero1 .button3{
+    top: 70vh;
+    left: calc(55vw - 76px);
+}
+
+.hero1 > section:last-of-type{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.hero1 > section:last-of-type img{
+    display: flex;
+    height: 50vh;
+    width: 40vw;
+    object-fit: cover;
+    animation-duration: 6s;
+    animation-name: swapHero3;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+
+@keyframes swapHero3 {
+    0%{
+        background-image: url(Images/LuxuriousHair/LH1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
+main, main > section, footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+main{
+    gap: 0;
+    margin-top: -var(--navHeightDesktop);
+}
+
+main > section, footer{
+    gap: 32px;
+}
+
+.title1, .title2{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title1{
+    width: 40vw;
+    max-width: 560px;
+    min-width: 480px;
+}
+
+.title2{
+    width: 60vw;
+    max-width: 560px;
+}
+
+
+.title3{
+    width: 35vw;
+    max-width: 540px;
+    height: 100%;
+}
+
+
+
+.button3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+.button1 img, .button2 img, button3 img{
+    width: 24px;
+    height: 24px;
+}
+
+
+.button1{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.fullHeight .button2 > p{
+    width: fit-content;
+}
+
+
+.button3{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 2px dashed var(--black);
+    position: absolute;
+    color: var(--black);
+}
+
+.sectionType1 .button3{
+    border: 2px dashed var(--white);
+    color: var(--white);
+    position: static;
+    mix-blend-mode: difference;
+    z-index: 3;
+}
+
+.button3 p{
+    font-weight: light;
+    font-size: 12px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+}
+
+.button2, .button3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1{
+    flex-direction: row;
+}
+
+.fullHeightPadded, .fullHeight{
+    height: 100vh;
+    max-height: 800px;
+    color: var(--white);
+    background-color: var(--black);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.fullHeightPadded{
+    padding: 64px 5vw;
+}
+
+.fullHeight{
+    padding: 120px 5vw 64px 5vw;
+}
+
+.fullHeightPadded > h4{
+    color: var(--black);
+}
+
+
+
+.fullHeight > h4{
+    z-index: 2;
+}
+
+
+.fullImage1, .fullImage2, .fullImage3{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.fullImage1{
+    background-image: url(Images/caseImage1.jpg);
+}
+
+.fullImage2{
+    background-image: url(Images/caseImage1.jpg);
+}
+
+main .lhSnippet1, main .lhSnippet2{
+    background-color: var(--light-overlay);
+    background-image: url(Images/LuxuriousHair/lhSnippet1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .aeSnippet1, main .aeSnippet2{
+    background-color: var(--aeGreen);
+    background-image: url(Images/AdaptabilityEducation/case/aeCaseDesktop.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .lhSnippet1 h4{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+#lhPersona, #aePersona{
+    background-position: center center;
+    background-size: 40vw auto;
+    background-repeat: no-repeat;
+}
+
+#lhPersona{
+    background-image: url(Images/LuxuriousHair/pexels-abel-kayode-10850675.jpg);
+}
+
+#aePersona{
+    background-image: url(Images/AdaptabilityEducation/pexels-august-de-richelieu-4260325.jpg);
+}
+
+
+#lhProblem, #aeProblem{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lhProblem{
+    background-image: url(Images/LuxuriousHair/pexels-yan-krukau-7312328.jpg);
+}
+
+#aeProblem{
+    background-image: url(Images/AdaptabilityEducation/pexels-yan-krukau-8613088.jpg);
+}
+
+main > .lhAffinity{
+    background-image: url(Images/LuxuriousHair/lhAffinity.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 85vw auto;
+}
+
+main > .lhUserFlow, main > .aeUserFlow{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 85vw auto;
+}
+
+main > .lhUserFlow{
+    background-image: url(Images/LuxuriousHair/lhUserFlow1.png);
+}
+
+main > .aeUserFlow{
+    background-image: url(Images/AdaptabilityEducation/case/aeFlow.png);
+}
+
+#lhSketchSnippet{
+    background-color: var(--black);
+    background-image: url(Images/LuxuriousHair/lhSketch1.png);
+}
+
+#aeSketchSnippet{
+    background-color: var(--aeGreen);
+    background-image: url(Images/LuxuriousHair/lhSketch2.png);
+}
+
+main > .lhSketchFull{
+    background-color: var(--black);
+    background-image: url(Images/LuxuriousHair/lhSketch2.png);
+}
+
+main > .aeSketchFull{
+    background-color: var(--aeGreen);
+    background-image: url(Images/AdaptabilityEducation/case/aeCaseDesktop.png);
+}
+
+
+.fullImage3{
+    background-image: url(Images/caseImage1.jpg);
+    padding: 40px;
+    overflow: hidden;
+}
+
+.fullImage3 .limitParagraph1{
+    z-index: 3;
+}
+
+
+.stickyParent{
+   height: 420vh;
+
+}
+.stickyParent1{
+   height: 550vh;
+}
+
+.toggleView{
+    display: none;
+    outline: 1px solid var(--grey-light);
+    padding: 8px 16px;
+    gap: 16px;
+    width: fit-content;
+    position: sticky;
+    top: 20px;
+    left: calc(50vw - 40px);
+    z-index: 7;
+}
+
+.toggleView section{
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.toggleViewList{
+    background-image: url(Images/social_icons/grid.png);
+}
+
+.toggleViewGrid{
+    background-image: url(Images/social_icons/list.png);
+}
+
+.toggleViewListBlack{
+    background-color: var(--grey-light);
+    background-image: url(Images/social_icons/gridBlack.png);
+}
+
+.toggleViewGridBlack{
+    background-image: url(Images/social_icons/listBlack.png);
+}
+
+.stickyHeight{
+    position: sticky;
+    top:0;
+    left: 0;
+}
+
+.swapSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 3;
+}
+
+.sticky{
+    position: sticky;
+    top: 64px;
+    left: 0;
+}
+
+
+.swapSection::-webkit-scrollbar{
+    display: none;
+}
+
+.swapSection > section{
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    animation-name: swapSectionAnimate;
+    animation-fill-mode: both;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5);
+}
+
+
+.sectionType1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    position: relative;
+    mix-blend-mode: var(--blend);
+}
+
+
+
+.sectionType1 > img{
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    left: 15vw;
+    z-index: 1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionType1 > .caseMock1{
+    background-image: url(Images/LuxuriousHair/pexels-lucas-alves-9899348\ -\ Copy.jpg);
+}
+
+.sectionType1 > .caseMock2{
+    background-image: url(Images/pexels-mikhail-nilov-8307597.jpg);
+}
+
+.sectionType1 > .caseMock3{
+    background-image: url(Images/pexels-jan-kopřiva-3315512.jpg);
+}
+
+.sectionType1 > .caseMock4{
+    background-image: url(Images/pexels-nati-torjman-8956385\ copy.jpg);
+}
+
+.sectionType1 > .caseMock5{
+    background-image: url(Images/pexels-sound-on-3756863.jpg);
+}
+
+.sectionType1 h2, .sectionType1 p{
+    z-index: 3;
+    mix-blend-mode: var(--blend);
+}
+
+.sectionType1 > img:nth-of-type(2){
+    background-image: url(Images/caseImage1.jpg);
+}
+
+
+.sectionType1 > img:nth-of-type(3){
+    background-image: url(Images/caseImage1.jpg);
+}
+
+
+.sectionType1 > img:nth-of-type(4){
+    background-image: url(Images/caseImage1.jpg);
+}
+
+.sectionType1 > img:nth-of-type(5){
+    background-image: url(Images/caseImage1.jpg);
+}
+
+
+.sectionType1 > section:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.sectionType1 > section:first-child, .sectionType1 > section:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+
+
+.sectionType1 > section:first-child{
+    align-items: start;
+}
+
+.sectionType1 > section:last-child{
+    align-items: end;
+}
+
+.sectionType1 > section:last-child > p{
+    width: 35vw;
+    text-align: right;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--dark-overlay);
+    z-index: 0;
+}
+.z_overlay{
+  z-index: -1;
+}
+
+.overlay2{
+    width: 90vw;
+    height: calc(100vh - 187px);
+    max-height: 613px;
+    position: absolute;
+    bottom: 64px;
+    left: 5vw;
+    background-color: var(--dark-overlay);
+    z-index: 1;
+}
+
+
+.singleLeftText{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 64px 5vw;
+    gap: 32px;
+}
+
+
+.sectionType2{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 60vh;
+    max-height: 660px;
+    width: 90vw;
+}
+
+.sectionType2 > section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.sectionType2 > section:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+}
+
+
+.sectionType2 > section:last-child{
+    align-items: end;
+    gap: 24px;
+}
+
+
+.sectionType2 > section:last-child > section:first-child{
+    display: flex;
+    align-items: end;
+    gap: 24px;
+    height: 100%;
+    width: 100%;
+}    
+
+.sectionType2 > section:last-child > section:first-child img{
+    height: 100%;
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.doubleTextSide, .doubleTextSideWhite{
+    padding: 64px 5vw; 
+}
+
+.doubleTextSide{
+    color: var(--white);
+    background-color: var(--black);  
+}
+
+.doubleTextSideWhite{
+    padding: 64px 5vw; 
+}
+
+.sectionType3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.sectionType3 .title2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionType3 .title2 h2{
+    text-align: center;
+    text-wrap: wrap;
+}
+
+
+.sectionType3 > section:last-child{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.sectionType3 > section:last-child > img{
+    width: calc(40vw - 64px);
+    height: auto;
+    object-fit: cover;
+}
+
+
+.limitParagraph1{
+    width: 25vw;
+    max-width: 300px;
+}
+
+.limitParagraph2{
+    width: 20vw;
+    max-width: 240px;
+}
+
+.menuPage .limitParagraph2{
+    width: 40vw;
+    max-width: 200px;
+    text-align: right;
+}
+
+
+.limitParagraph3{
+    max-width: 160px;
+}
+
+.horizontalList > section{
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+}
+
+
+.horizontalList > section section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.horizontalList > section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+
+
+
+
+.sectionType3 > section:last-child > section{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    max-height: 560px;
+    text-align: right;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+
+
+.hero2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100vw;
+    padding: 120px 5vw 64px 5vw;
+}
+
+.hero2 > section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.hero2 > section:nth-child(2){
+    height: 80vh;
+    max-height: 560px;
+    background-color: var(--black);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#lhHero{
+    background-image: url(Images/LuxuriousHair/LH1.png);
+}
+
+#aeHero{
+    background-color: var(--aeGreen);
+    background-image: url(Images/AdaptabilityEducation/case/aeCaseDesktop.png);
+}
+
+main .aeBackColor, .aeBackColor{
+    background-color: var(--aeGreen);
+    color: var(--black);
+}
+
+main .aeBackColor .button3{
+    border-color: var(--black);
+    color: var(--black);
+}
+
+#lhOverview{
+    background-image: url(Images/LuxuriousHair/pexels-ron-lach-8396310.jpg);
+}
+
+#aeOverview{
+    background-image: url(Images/AdaptabilityEducation/pexels-rdne-stock-project-7402983.jpg);
+}
+
+
+.doubleRightText{
+    padding: 64px 5vw;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.doubleRightTextWhite, .doubleLeftTextWhite{
+    padding: 64px 5vw;
+}
+
+
+
+.sectionType4{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sectionType4 > section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+}
+
+.sectionType4 >  section > section{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionType4 .button3{
+    position: static;
+    color: var(--white);
+    border: 2px dashed var(--white);
+}
+
+.doubleTextSideWhite .button3{
+    position: static;
+}
+
+.sectionType4 >  section > section:first-child{
+    gap: 32px;
+}
+
+#lhStyle, #aeStyle{
+    display: flex;
+    gap: 24px;
+    width: 40vw;
+    min-width: 520px;
+}
+
+.sectionType4 >  section > section:first-child > section{
+    height: calc(70vh - 152px);
+    width: 40vw;
+    min-width: 520px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#lhStyle > section, #aeStyle > section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+}
+
+#lhStyle > section:last-child, #aeStyle > section:last-child{
+    width: 100%;
+}
+
+
+#lhStyle > section:first-child > section:first-child, #aeStyle > section:first-child > section:first-child{
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     padding: 24px;
+     width: fit-content;
+     height: fit-content;
+}
+
+#lhStyle > section:first-child > section:first-child{
+    color: var(--white);
+    background-color: var(--black);
+}
+
+#aeStyle > section:first-child > section:first-child{
+
+    color: var(--black);
+    background-color: var(--aeGreen);
+}
+
+
+#lhStyle > section:last-child > section, #aeStyle > section:last-child > section{
+    display: flex;
+    background-color: var(--dark-overlay);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+
+#lhStyle img, #aeStyle img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lhStyle img{
+    background-color: var(--black);
+}
+
+#aeStyle img{
+    background-color: var(--aeGreen);
+}
+
+
+#lhStyle > section:last-child img{
+    background-image: url(Images/LuxuriousHair/lhIcons.png);
+}
+
+#lhStyle > section:first-child img{
+    background-image: url(Images/LuxuriousHair/lhLogo.png);
+    background-position: center center;
+}
+
+#aeStyle > section:last-child img{
+    background-image: url(Images/AdaptabilityEducation/case/aeIcons.png);
+    background-color: var(--black);
+}
+
+#aeStyle > section:first-child img{
+    background-image: url(Images/AdaptabilityEducation/case/student\ 1.png);
+    background-position: center center;
+    background-color: var(--black);
+}
+
+
+#lhStyle > section:last-child section{
+    background-color: var(--black);
+    background-image: url(Images/LuxuriousHair/lhBrandImage.png);
+    background-size: auto 90%;
+    background-position: center bottom;
+}
+
+#aeStyle > section:last-child section{
+    background-color: var(--aeGreen);
+    background-image: url(Images/AdaptabilityEducation/case/Child\ 1.png);
+    background-size: auto 90%;
+    background-position: center bottom;
+}
+
+#aeStyle h2{
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25;
+}
+
+
+#lhSolutionMiniSnippets, #aeSolutionMiniSnippets{
+    animation-duration: 4s;
+    animation-name: swap2;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+}
+
+#aeSolutionMiniSnippets{
+    animation-duration: 4s;
+    animation-name: swap22;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+}
+
+
+@keyframes swap2 {
+
+    0%{
+        background-image: url(Images/LuxuriousHair/mannequinShareSnippet.png);
+    }
+
+    49%{
+        background-image: url(Images/LuxuriousHair/mannequinShareSnippet.png);
+    }
+
+
+    50%{
+        background-image: url(Images/LuxuriousHair/testimonialSnippet.png);
+    }
+
+    100%{
+        background-image: url(Images/LuxuriousHair/testimonialSnippet.png);
+    }
+    
+}
+
+
+
+@keyframes swap22 {
+
+    0%{
+        background-image: url(Images/AdaptabilityEducation/case/forumSnippet.png);
+    }
+
+    49%{
+        background-image: url(Images/AdaptabilityEducation/case/forumSnippet.png);
+    }
+
+
+    50%{
+        background-image: url(Images/AdaptabilityEducation/case/generateSnippet.png);
+    }
+
+    100%{
+        background-image: url(Images/AdaptabilityEducation/case/generateSnippet.png);
+    }
+    
+}
+
+
+#lhSolutionMiniSnippets, #lhSolutionMiniSnippets2{
+    background-color: var(--black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+
+#aeSolutionMiniSnippets, #aeSolutionMiniSnippets2{
+    background-color: var(--aeGreen);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+#lhSolutionMiniSnippets2{
+    background-image: url(Images/LuxuriousHair/lhSnippet1Mobile.png);
+    background-size: cover;
+}
+
+#aeSolutionMiniSnippets2{
+    background-image: url(Images/AdaptabilityEducation/case/aeCaseDesktop.png);
+    background-size: cover;
+}
+
+#lhSolutionMiniSnippets, #aeSolutionMiniSnippets{
+    background-size: 90% auto;
+}
+
+
+
+.sectionType4 > section > section:first-child > section{
+    background-image: url(Images/Frame\ 1000002993.png);
+}
+
+.sectionType4 >  section > section:last-child{
+    justify-content: space-between;
+    align-items: end;
+    width: 35vw;
+    height: 70vh;
+    max-height: 720px;
+}
+
+.doubleRightTextWhite .sectionType4 >  section > section:last-child, .doubleLeftTextWhite .sectionType4 >  section > section:last-child{
+    height: 65vh;
+    min-height: 560px;
+}
+
+.doubleRightTextWhite .sectionType4 >  section > section:first-child > section, .doubleLeftTextWhite .sectionType4 >  section > section:first-child > section, #lhStyle, #aeStyle{
+    height: 65vh;
+    min-height: 560px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.doubleRightTextWhite .sectionType4 >  section > section:first-child > section, .doubleLeftTextWhite .sectionType4 >  section > section:first-child > section{
+    background-image: url(Images/Frame\ 1000002993.png);
+}
+
+.doubleLeftTextWhite .sectionType4 >  section{
+    flex-direction: row-reverse;
+}
+
+.doubleLeftTextWhite .sectionType4 >  section > section:last-child{
+    flex-direction: column-reverse;
+}
+
+#moreProjects{
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    height: 60vh;
+}
+
+#moreProjects > div{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+}
+
+#moreProjects a{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    width: 100%;
+}
+
+#moreProjects a:nth-child(2){
+    background-color: var(--grey-dark);
+}
+
+#moreProjects a:nth-child(1){
+    background-color: var(--light-overlay);
+}
+
+#moreProjects a:hover{
+    color: #00000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(Images/caseImage1.jpg);
+}
+
+#moreProjects > div:first-child > a:first-child, #moreProjects > div:last-child > a:last-child{
+    height: 55%;
+}
+
+#moreProjects > div:first-child > a:last-child, #moreProjects > div:last-child > a:first-child{
+    height: 45%;
+}
+
+
+#lhStyle, #aeStyle{
+    display: flex;
+    gap: 24px;
+    width: 40vw;
+    height: 65vh;
+    min-height: 560px;
+    max-width: 720px;
+}
+
+
+
+#lhStyle > section > img, #aeStyle > section > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.sectionType4 >  section > section:last-child > p{
+    width: 90%;
+    text-align: right;
+}
+
+.sectionType4 >  section > section:last-child > section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.sectionType4 li, .sectionType5 li{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.sectionType4 ul, .sectionType5 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sectionType5{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.sectionType5 section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.titleSection, .titleSection2, .titleSection3{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    width: 100vw;
+    text-align:  center;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.titleSection{
+    padding: 96px 5vw 32px 5vw;
+}
+
+.titleSection2{
+    padding: 96px 5vw 64px 5vw;
+}
+
+.titleSection3{
+    padding: 96px 5vw 0 5vw;
+}
+
+.titleSection h2, .titleSection2 h2{
+    width: 60vw;
+}
+
+
+
+footer{
+    padding: 64px 5vw;
+}
+
+.defaultFooter{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.aeFooter{
+    background-color: var(--aeGreen);
+    color: var(--black);
+}
+
+footer > section{
+    display: flex;
+    width: 90vw;
+    height: 60vh;
+    justify-content: space-between;
+    align-items: end;
+}
+
+footer > section > section:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer > section > section:first-child img{
+    width: 50%;
+    height: 30vh;
+    max-height: 300px;
+    object-position: center center;
+    object-fit: cover;
+}
+
+footer > section > section:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    text-align: right;
+    height: 100%;
+    width: fit-content;
+}
+
+
+
+footer > section > section:last-child section,  .menuPage > section:last-child > section{
+    display: flex;
+    gap: 24px;
+}
+
+
+
+
+
+h1{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+
+h3{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif;
+}
+
+li{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Public Sans", sans-serif; 
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.whiteButton{
+    color: var(--white);
+}
+
+.opacityHidden{
+    opacity: 0;
+}
+
+.centerHeading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    border: none;
+    outline: none;
+}
+
+
+@media  screen and (min-height: 880px){
+    .hero1 .button3{
+        top: 480px;
+    }
+
+    .sectionType1 > img{
+        max-height: 400px;
+        width: 60vw;
+    }
+
+    main > .lhAffinity{
+        background-image: url(Images/LuxuriousHair/lhAffinityMobile.png);
+        background-size: auto 70%;
+    }
+
+    .hero1 > section:last-of-type img{
+        width: 90%;
+        height: 30vh;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+header{
+    height: fit-content;
+}
+
+.hero1{
+    height: 70vh;
+}
+
+.dynamicHeading{
+    height: 81px;
+}
+
+.hero1 > section:last-of-type img{
+    width: 90%;
+    height: 30vh;
+}
+
+.dynamicHeading > span{
+    min-width: 540px;
+}
+    
+    
+    @keyframes swapHeading{
+        from{
+            transform: translateY(0) ;
+        }
+
+        to{
+            transform: translateY(calc(-405px));
+        }
+    }
+
+
+.horizontalList > section{
+    gap: 32px;
+}
+
+.sectionType2{
+    height: 45vh;
+}
+
+.sectionType2 > section:last-child{
+    height: fit-content;
+}
+
+
+.sectionType2 > section:last-child > section:first-child{
+    flex-direction: column;
+    height: fit-content;
+}
+
+.sectionType4 >  section > section:first-child > section, #lhStyle, #aeStyle{
+    width: 30vw;
+    min-width: 400px;
+}
+
+
+.sectionType3 > section:last-child > section {
+    height: 50vh;
+    max-height: 480px;
+}
+
+.doubleRightTextWhite .sectionType4 > section > section:first-child > section, .doubleLeftTextWhite .sectionType4 > section > section:first-child > section, #lhStyle, #aeStyle{
+    height: 50vh;
+    min-height: 400px;
+}
+
+.sectionType4 > section > section:last-child {
+    height: 45vh;
+    min-height: 600px;
+}
+
+#lhSolutionMiniSnippets{
+    height: 30vh;
+    background-size: 80% auto;
+}
+
+.title1{
+    width: 35vw;
+    max-width: 480px;
+    min-width: 400px;
+}
+
+footer > section > section:last-child{
+    .limitParagraph2{
+        width: 40vw;
+        max-width: 300px;
+    }
+}
+
+.menuPage{
+
+    padding: 168px 2.5VW 104px 2.5vw;
+}
+
+.menuPage > section:first-child{
+    gap: 24px;
+}
+
+
+.menuPage > section:last-child{
+    width: 95vw;
+}
+
+.menuPage .limitParagraph2{
+    width: 40vw;
+    max-width: 320px;
+    text-align: right;
+}
+
+main > .lhAffinity{
+    background-image: url(Images/LuxuriousHair/lhAffinityMobile.png);
+    background-size: auto 70%;
+}
+
+main > .lhUserFlow, main > .aeUserFlow{
+    background-size: auto 70%;
+}
+
+main > .lhUserFlow{
+    background-image: url(Images/LuxuriousHair/lhUserFlow1Mobile.png);
+}
+
+main > .aeUserFlow{
+    background-image: url(Images/AdaptabilityEducation/case/aeFlowMobile.png);
+}
+
+
+h1{
+    font-size: 54px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+li{
+    font-size: 12px
+}
+
+
+}
+
+
+@media screen and (max-width: 540px) {
+
+body, header{
+    width: 100vw;
+}
+
+body::-webkit-scrollbar{
+    width: auto;
+}
+
+    header{
+    height: fit-content;
+}
+
+main{
+    width: 100vw;
+}
+
+nav{
+    width: 100vw;
+    padding: 0 2.5vw;
+}
+
+nav a:first-of-type{ 
+    font-size: 18px;
+}
+
+main .lhSnippet1, main .lhSnippet2{
+    background-image: url(Images/LuxuriousHair/lhSnippet1Mobile.png);
+}
+
+main > .lhSketchFull{
+    background-image: url(Images/LuxuriousHair/lhSketch2Mobile.png);
+}
+
+.hero1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 2.5vw 64px 2.5vw;
+    height: 100%;
+    width: 100vw;
+}
+    
+.hero1 .button3{
+        top: 600px;
+}
+
+
+.hero1 > section:last-of-type img{
+    width: 100%;
+    
+}
+
+
+.dynamicHeading{
+    height: 60px;
+}
+
+.dynamicHeading > span{
+    min-width: 430px;
+}
+    
+    
+    @keyframes swapHeading{
+        from{
+            transform: translateY(0) ;
+        }
+
+        to{
+            transform: translateY(calc(-300px));
+        }
+    }
+
+
+.hero2{
+    width: 100vw;
+    padding: 80px 2.5vw 64px 2.5vw;
+}
+
+
+.fullHeightPadded{
+    padding: 64px 2.5vw;
+}
+
+.fullHeight{
+    padding: 96px 2.5vw 64px 2.5vw;
+    width: 100vw;
+}
+
+.sectionType1 > section:last-child > p{
+    width: 50vw;
+}
+
+#aeStyle h2{
+    font-size: 24px;
+}
+
+
+.menuPage{
+    width: 100vw;
+    padding: 168px 2.5VW 104px 2.5vw;
+}
+
+.menuPage > section:first-child{
+    gap: 24px;
+}
+
+
+.menuPage > section:last-child{
+    flex-direction: column;
+    gap: 24px;
+    width: 95vw;
+}
+
+.menuPage .limitParagraph2{
+    width: 60vw;
+    text-align: right;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+
+p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+li{
+    font-size: 8px;
+}
+
+
+.title1{
+    width: 60vw;
+}
+
+.title2{
+ width: 80%;
+}
+
+
+.title3{
+    width: 100%;
+    max-width: fit-content;
+}
+
+.hero2 .title2{
+    width: 50vw;
+}
+
+.hero2 > section:nth-child(2){
+    height: 60vh;
+}
+
+.limitParagraph1 {
+    width: 40vw;
+    max-width: 320px;
+}
+
+.singleLeftText{
+    width: 100vw;
+    padding: 64px 2.5vw;
+}
+
+.sectionType1{
+    width: 95vw;
+}
+
+.sectionType1 > img{
+    width: 65vw;
+    height: 45vh;
+    position: absolute;
+    top: 120px;
+    left: 10vw;
+}
+
+.sectionType2{
+    height: fit-content;
+    max-height: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 40px;
+    width: 95vw;
+
+}
+
+
+.sectionType2 > section:first-child{
+    gap: 32px;
+    height: fit-content;
+}
+
+.sectionType2 > section:last-child{
+    width: 100%;
+    height: fit-content;
+    justify-content: start;
+    align-items: end;
+    gap: 16px;
+}
+
+
+
+.sectionType2 > section:last-child > section:first-child > img{
+    width: aut0;
+    height: 40vh;
+}
+
+
+
+.doubleTextSide, .doubleTextSideWhite{
+    width: 100vw;
+    padding: 64px 2.5vw;
+}
+
+
+.sectionType3 > section:last-child{
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+}
+
+.sectionType3 > section:last-child > section {
+    height: fit-content;
+    width: 100%;
+    gap: 24px;
+}
+
+.sectionType3 > section:last-child > img{
+    width: 70%;
+}
+
+
+.horizontalList > section{
+    gap: 16px;
+}
+
+
+.doubleRightText{
+    width: 100vw;
+    padding: 64px 2.5vw;
+}
+
+.sectionType4 > section{
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.sectionType4 .button3{
+    position: absolute;
+    top: 200px;
+    left: calc(50vw - 60px);
+}
+
+.sectionType4 > section > section:last-child{
+    gap: 24px;
+    width: 100%;
+    height: fit-content;
+    min-height: fit-content;
+}
+
+
+.sectionType4 > section > section:last-child > p{
+    width: 60vw;
+}
+
+main > .lhAffinity{
+    background-size: auto 55%;
+}
+
+.doubleTextSideWhite{
+    padding: 64px 2.5vw;
+}
+
+
+.doubleRightTextWhite, .doubleLeftTextWhite {
+    width: 100vw;
+    padding: 64px 2.5vw;
+}
+
+
+.doubleRightTextWhite .sectionType4 > section > section:last-child, .doubleLeftTextWhite .sectionType4 > section > section:last-child{
+    height: fit-content;
+    min-height: fit-content;
+    gap: 24px;
+}
+
+.overlay{
+    padding: 100vw;
+}
+
+.overlay2{
+    width: 95vw;
+    left: 2.5vw;
+}
+
+.fullImage3{
+    width: 95vw;
+    padding: 16px;
+}
+
+
+.doubleLeftTextWhite .sectionType4 > section{
+    flex-direction: column;
+}
+
+.titleSection{
+    padding: 64px 2.5vw 24px 2.5vw;
+}
+
+.titleSection2{
+    padding: 64px 2.5vw 48px 2.5vw;
+}
+
+.titleSection h2, .titleSection2 h2{
+    width: 80vw;
+}
+
+footer{
+    height: fit-content;
+    width: 100vw;
+    padding: 64px 2.5vw;
+}
+
+footer > section{
+    flex-direction: column;
+    gap: 40px;
+    height: fit-content;
+}
+
+
+
+footer > section > section{
+    height: fit-content;
+    gap: 24px;
+}
+
+
+
+footer > section > section:first-child h2{
+    width: 70%;
+} 
+
+
+footer > section > section:last-child{
+    .limitParagraph2{
+        width: 50vw;
+        max-width: 300px;
+    }
+}
+
+#moreProjects{
+    flex-direction: column;
+    gap: 24px;
+    height: 120vh;
+}
+
+#moreProjects > div{
+    gap: 24px;
+}
+
+#moreProjects a{
+    padding: 24px;
+    width: 100%;
+}
+
+
+#moreProjects > div:first-child > a:first-child, #moreProjects > div:last-child > a:last-child{
+    height: 100%;
+}
+
+#moreProjects > div:first-child > a:last-child, #moreProjects > div:last-child > a:first-child{
+    height: 100%;
+}
+
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+    nav{
+        height: 56px;
+        padding: 0 16px;
+    }
+
+
+    nav > a:first-child{
+        font-size: 16px;
+    }
+
+    .hero1, .hero2{
+        padding: 80px 16px 64px 16px;
+    }
+
+    .hero2 > section:first-child{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .hero2 .title2{
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    .limitParagraph1{
+        width: 80vw;
+        max-width: 320px;
+    }
+
+    .hero2 > .horizontalList{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .horizontalList > section{
+        width: 100%;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+.fullHeightPadded{
+        padding: 64px 16px;
+    }
+
+.fullHeight{
+        padding: 96px 16px 64px 16px;
+    }
+
+
+    .fullImage3{
+        width: calc(100vw - 32px);
+    }
+
+    .singleLeftText{
+        padding: 64px 16px;
+    }
+
+    .doubleTextSide, .doubleTextSideWhite{
+        padding: 64px 16px;
+    }
+
+    .doubleRightText{
+        padding: 64px 16px;
+    }
+
+    
+    .doubleRightTextWhite, .doubleLeftTextWhite{
+        padding: 64px 16px;
+    }
+
+
+    .limitParagraph3{
+        width: 100%;
+        max-width: fit-content;
+    }
+
+
+    .sectionType1, .sectionType2{
+        width: calc(100vw - 32px);
+    }
+
+
+    .sectionType1 > section:first-child, .sectionType1 > section:last-child{
+        width: calc(100vw - 32px);
+    }
+
+
+    .sectionType1 > section:first-child{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .sectionType1 > img{
+        width: 70vw;
+        height: 55vh;
+        position: absolute;
+        top: 48px;
+        left: 10vw;
+    }
+
+    .title1{
+        width: calc(100vw - 32px);
+        max-width: none;
+        min-width: calc(100vw - 32px);
+    }
+
+    .sectionType4 > section > section:last-child {
+        gap: 32px;
+    }
+
+    .sectionType4 > section > section:last-child > p {
+        width: 80vw;
+    }
+
+    .sectionType3 .title2{
+        width: calc(100vh - 32px);
+        max-width: fit-content;
+        align-items: start;
+    }
+
+    .sectionType3 .title2 h2{
+        text-align: left;
+    }
+
+
+    .overlay2{
+        width: calc(100vw - 32px);
+        left: 16px;
+    }
+
+    .menuPage > section:last-child{
+        width: calc(100vw - 32px);
+    }
+
+
+
+    footer > section > section:first-child h2 {
+        width: 100%;
+    }
+
+    footer{
+        padding: 64px 16px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .dynamicHeading{
+        height: 54px;
+    }
+
+    .titleSection{
+        padding: 64px 16px 24px 16px;
+    }
+    
+    .titleSection2{
+        padding: 64px 16px 48px 16px;
+    }
+    
+    .titleSection h2, .titleSection2 h2{
+        width: 80vw;
+    }
+    
+    .dynamicHeading > span{
+        min-width: calc(100vh - 32px);
+    }
+        
+        
+        @keyframes swapHeading{
+            from{
+                transform: translateY(0) ;
+            }
+    
+            to{
+                transform: translateY(calc(-270px));
+            }
+        }
+
+        .hero1 > section:first-of-type section:first-child {
+            width: calc(100vw - 16px);
+        }
+
+        .sectionType4 > section > section:first-child > section, #lhStyle, #aeStyle{
+            width: calc(100vw - 32px);
+            min-width: calc(100vw - 32px);
+        }
+
+
+    
+}
+
+
+@media screen and (max-width: 320px) {
+    h1{
+        font-size: 24px;
+    
+    }
+    
+    h2{
+
+        font-size: 20px;
+    
+    }
+    
+    
+    
+    h3{
+        font-size: 16px;
+        
+    }
+    
+    
+    h4{
+        font-size: 14px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    li{
+        font-size: 10px;
+    }
+
+
+    .dynamicHeading{
+        height: 36px;
+    }
+    
+    .dynamicHeading > span{
+        min-width: calc(100vh - 32px);
+    }
+        
+        
+        @keyframes swapHeading{
+            from{
+                transform: translateY(0) ;
+            }
+    
+            to{
+                transform: translateY(calc(-180px));
+            }
+        }
+}
