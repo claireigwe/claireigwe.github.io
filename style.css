@@ -248,9 +248,6 @@ header{
         background-image: url(Images/adaptabilityEd/mocks/Forum\ Profile2.png);
     }
 
-    100%{
-        background-image: url(Images/adaptabilityEd/mocks/Forum\ Topic.png);
-    }
 }
 
 @keyframes dogHero1{
@@ -278,9 +275,6 @@ header{
         background-image: url(Images/dogStalker/Community-1.png);
     }
 
-    100%{
-        background-image: url(Images/dogStalker/Onboarding\ 1.png);
-    }
    
     
 }
@@ -308,10 +302,6 @@ header{
 
     80%{
         background-image: url(Images/dogStalker/Create\ Post.png);
-    }
-
-    100%{
-        background-image: url(Images/dogStalker/Dawg\ Profile.png);
     }
     
 }
