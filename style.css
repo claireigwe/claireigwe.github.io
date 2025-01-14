@@ -150,15 +150,15 @@ header{
 
 @keyframes profileTransition{
     0%{
-        background-image: Images/Claire 1;
+        background-image: Images/Claire1;
     }
     
     33.3%{
-        background-image: Images/Claire 2;
+        background-image: Images/Claire2;
     }
 
     67%{
-        background-image: Images/Claire 3;
+        background-image: Images/Claire3;
     }
 }
 
