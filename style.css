@@ -1621,6 +1621,13 @@ footer{
         top: calc(50vh - 120px);
         left: calc(50vw - 120px);
         background-color: var(--black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        animation-name: profileTransition;
+        animation-duration: 8s;
+        animation-iteration-count: infinte;
+        animation-timing-function: step-end;
     }
 
     > section{
