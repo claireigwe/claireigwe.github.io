@@ -123,7 +123,7 @@ header{
                     background-size: contain;
                     animation-name: profileTransition;
                     animation-duration: 8s;
-                    animation-iteration-count: infinte;
+                    animation-iteration-count: infinite;
                     animation-timing-function: step-end;
                 }
             }
@@ -633,7 +633,7 @@ h4{
             background-size: cover;
             animation-name: profileTransition;
             animation-duration: 8s;
-            animation-iteration-count: infinte;
+            animation-iteration-count: infinite;
             animation-timing-function: step-end;
             
         }
@@ -1586,7 +1586,7 @@ footer{
         background-repeat: no-repeat;
         animation-name: profileTransition;
         animation-duration: 8s;
-        animation-iteration-count: infinte;
+        animation-iteration-count: infinite;
         animation-timing-function: step-end;
         background-position: center center;
         background-size: cover;
@@ -1626,7 +1626,7 @@ footer{
         background-position: center center;
         animation-name: profileTransition;
         animation-duration: 8s;
-        animation-iteration-count: infinte;
+        animation-iteration-count: infinite;
         animation-timing-function: step-end;
     }
 
