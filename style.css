@@ -118,6 +118,13 @@ header{
                     width: 48px;
                     border-radius: 24px;
                     background-color: var(--black);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                    animation-name: profileTransition;
+                    animation-duration: 8s;
+                    animation-iteration-count: infinte;
+                    animation-timing-function: step-end;
                 }
             }
 
@@ -139,8 +146,20 @@ header{
             }
         }
     }
+}
 
+@keyframes profileTransition{
+    0%{
+        background-image: Images/Claire 1;
+    }
+    
+    33.3%{
+        background-image: Images/Claire 2;
+    }
 
+    67%{
+        background-image: Images/Claire 3;
+    }
 }
 
 .caseTemplate header{
@@ -607,10 +626,15 @@ h4{
         }
 
         > img{
-            width: 30%;
-            height: 80%;
-            object-fit: cover;
-            object-position: center top;
+            width: 25%;
+            aspect-ratio: 1.75;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            animation-name: profileTransition;
+            animation-duration: 8s;
+            animation-iteration-count: infinte;
+            animation-timing-function: step-end;
             
         }
         
@@ -1559,8 +1583,13 @@ footer{
         left: calc(50vw - 120px);
         width: 200px;
         height: 200px;
-        object-position: center center;
-        object-fit: contain;
+        background-repeat: no-repeat;
+        animation-name: profileTransition;
+        animation-duration: 8s;
+        animation-iteration-count: infinte;
+        animation-timing-function: step-end;
+        background-position: center center;
+        background-size: cover;
         background-color: var(--black);
     }
 
