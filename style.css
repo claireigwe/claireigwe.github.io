@@ -115,8 +115,8 @@ header{
                 gap: 24px;
                 
                 div{
-                    width: 200px;
-                    border-radius: 48px;
+                    width: 48px;
+                    border-radius: 24px;
                     background-color: var(--black);
                 }
             }
