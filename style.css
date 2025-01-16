@@ -1037,7 +1037,8 @@ h4{
 
         > section{
             img:last-child{
-                animation-name: dogTransition3;
+                animation-name: adaptTransition2;
+                animation-delay: 3.5s;
             }
 
             img:first-child{
@@ -1050,7 +1051,7 @@ h4{
     .insights2{
         > section{
             img:last-child{
-                animation-name: dogTransition4;
+                animation-name: adaptTransition2;
             }
 
             img:first-child{
@@ -1061,6 +1062,7 @@ h4{
         }
     }
 }
+
 
 @keyframes dogTransition3{
     0%{
@@ -1104,6 +1106,16 @@ h4{
     50%{
         background-image: url(Images/dogStalker/Search-1.png);
         background-position: top 48px center;
+    }
+}
+
+@keyframes adaptTransition2 {
+    0%{
+        background-image: url(Images/adaptabilityEd/pexels-abd-alrhman-al-darra-337910335-30230080.jpg);
+    }
+
+    50%{
+        background-image: url(Images/adaptabilityEd/pexels-arjunadinata-30248235.jpg);
     }
 }
 
