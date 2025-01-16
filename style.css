@@ -830,7 +830,7 @@ h4{
 
 #adaptabilityEdCase .problem{
     background-color: var(--adaptabilityEd);
-    animation-name: dogTransition2;
+    animation-name: adaptTransition3;
     background-size: 60% auto;
 }
 
@@ -1116,6 +1116,26 @@ h4{
     50%{
         background-image: url(Images/adaptabilityEd/pexels-arjunadinata-30248235.jpg);
     }
+}
+
+@keyframes adaptTransition3{
+    0%{
+        background-image: url(Images/adaptabilityEd/pexels-abd-alrhman-al-darra-337910335-30230080.jpg);
+    }
+
+    25%{
+        background-image: url(Images/adaptabilityEd/pexels-arjunadinata-30248235.jpg);
+    }
+
+    50%{
+        background-image: url(Images/adaptabilityEd/adaptabilityEd5.png);
+    }
+
+    75%{
+        background-image: url(Images/adaptabilityEd/adaptabilityEd6.png);
+    }
+
+    
 }
 
 .templateSection3{
