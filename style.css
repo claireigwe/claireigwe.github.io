@@ -831,7 +831,6 @@ h4{
 #adaptabilityEdCase .problem{
     background-color: var(--adaptabilityEd);
     animation-name: adaptTransition3;
-    background-size: 60% auto;
 }
 
 
@@ -1121,18 +1120,26 @@ h4{
 @keyframes adaptTransition3{
     0%{
         background-image: url(Images/adaptabilityEd/pexels-abd-alrhman-al-darra-337910335-30230080.jpg);
+        background-size: cover;
+        background-position: center center'
     }
 
     25%{
         background-image: url(Images/adaptabilityEd/pexels-arjunadinata-30248235.jpg);
+        background-size: cover;
+        background-position: center center'
     }
 
     50%{
         background-image: url(Images/adaptabilityEd/adaptabilityEd5.png);
+        background-size: 120% auto;
+        background-position: top 32px left 32px;
     }
 
     75%{
         background-image: url(Images/adaptabilityEd/adaptabilityEd6.png);
+        background-size: 120% auto;
+        background-position: top 32px left 32px;
     }
 
     
