@@ -1022,7 +1022,6 @@ h4{
             img{
                 background-color: var(--adaptabilityEd);
                 animation-duration: 7s;
-                animation-iteration-count: step-end;
 
             }
 
